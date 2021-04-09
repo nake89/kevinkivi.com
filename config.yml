@@ -1,0 +1,27 @@
+title: "kevinkivi.com"
+theme: "PaperMod"
+
+
+params:
+    defaultTheme: dark
+    profileMode:
+        enabled: true
+        title: "Kevin Kivi 🧙🏽‍♂️" # optional default will be site title
+        subtitle: "Open Sourcerer"
+        imageUrl: "https://s.gravatar.com/avatar/217bcfe9528267ba6f474b00e6b237c5?s=120&r=g" # optional
+        imageTitle: "Kevin Kivi" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Github
+              url: "https://github.com/nake89"
+
+    socialIcons: # optional
+        - name: "Github"
+          url: "https://github.com/nake89/"
+        - name: "Twitter"
+          url: "https://twitter.com/nake89"
+        - name: "LinkedIn"
+          url: "https://www.linkedin.com/in/kevinkivi/"
