@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on kevinkivi.com</title>
+    <link>/tags/uncategorized/</link>
+    <description>Recent content in Uncategorized on kevinkivi.com</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get mysql privileges of all users</title>
+      <link>/posts/179/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/179/</guid>
+      <description>select * from information_schema.user_privileges; show grants for &amp;lsquo;username&amp;rsquo;@&amp;lsquo;10.0.0.%&#39;;
+select user from mysql.db where db=&#39;DB_NAME&#39;; ```</description>
+    </item>
+    
+    <item>
+      <title>Node.js: HTTPS on Express.js</title>
+      <link>/posts/173/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/173/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PERL: Install Cpanel:JSON:XS</title>
+      <link>/posts/161/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/161/</guid>
+      <description>asd</description>
+    </item>
+    
+    <item>
+      <title>tar cf relative path</title>
+      <link>/posts/176/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/176/</guid>
+      <description>https://stackoverflow.com/questions/18681595/tar-a-directory-but-dont-store-full-absolute-paths-in-the-archive</description>
+    </item>
+    
+  </channel>
+</rss>
