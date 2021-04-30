@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kevinkivi.com</title>
+    <link>/</link>
+    <description>Recent content on kevinkivi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Sep 2018 14:37:01 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux &amp; OSX: Get file encoding</title>
+      <link>/posts/linux-osx-get-file-encoding/</link>
+      <pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate>
+      
+      <guid>/posts/linux-osx-get-file-encoding/</guid>
+      <description>Sometime you need to know what&amp;rsquo;s your file encoding? Is it UTF-8, ISO 8859-1, ASCII or Windows 1252? You can find this out by using the file Unix command. Linux: file -i &amp;lt;filename&amp;gt; Mac OSX: file -I &amp;lt;filename&amp;gt; Example usage:
+username@server ~$ file -i somefile.php somefile.php: text/x-php; charset=us-ascii username@server ~$ file -i myutf8file.txt myutf8file.txt: text/plain; charset=utf-8 username@server ~$ file -i username.tar.bz2 username.tar.bz2: application/x-bzip2; charset=binary username@server ~$ If you want only the encoding.</description>
+    </item>
+    
+    <item>
+      <title>GIT: Get remote repository URL</title>
+      <link>/posts/git-get-remote-repository-url/</link>
+      <pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate>
+      
+      <guid>/posts/git-get-remote-repository-url/</guid>
+      <description>So you need the remote repository URL. Maybe because you are trying to git add remote. You can type the below text to get the full info (needs to be done inside the folder you are working in):
+git remote show origin OR
+git config --get remote.origin.url After you know this, if you want you can create a new remote branch
+git add remote &amp;lt;name you want for your new branch&amp;gt; &amp;lt;URL you just got&amp;gt; git add remote newbranch git@hostedgit.</description>
+    </item>
+    
+    <item>
+      <title>PHP: Curl vs file_get_contents benchmark</title>
+      <link>/posts/php-curl-vs-file_get_contents-benchmark/</link>
+      <pubDate>Mon, 13 Aug 2018 17:55:17 +0000</pubDate>
+      
+      <guid>/posts/php-curl-vs-file_get_contents-benchmark/</guid>
+      <description>I benchmarked curl vs file_get_contents in getting headers only and returning the HTTP Status Code. Here are the results:
+kevinkivi@server:~/my/secret/directory$ php curlvsfgctest.php Testing curl speed Domain: http://google.com Status: 301 Domain: http://yahoo.com Status: 301 Domain: http://nytimes.com Status: 301 Domain: http://theguardian.com Status: 301 Domain: http://wikipedia.org Status: 301 Curl speed was 0.35739207267761 Testing file\_get\_contents speed Domain: http://google.com Status: HTTP/1.0 301 Moved Permanently Domain: http://yahoo.com Status: HTTP/1.0 301 Moved Permanently Domain: http://nytimes.com Status: HTTP/1.1 301 Moved Permanently Domain: http://theguardian.</description>
+    </item>
+    
+    <item>
+      <title>Javascript: Cronometer ratio changer</title>
+      <link>/posts/cronometer-ratio-changer/</link>
+      <pubDate>Sat, 21 Jul 2018 09:51:40 +0000</pubDate>
+      
+      <guid>/posts/cronometer-ratio-changer/</guid>
+      <description>I created a script (with the help of my wife) which can change the ratio of foods. E.g.To make new food in Cronometer such as date paste, export &amp;ldquo;Dates&amp;rdquo; JSON from Cronometer. Then import the file. If the date paste is 15% water and 85% dates, then make the multiplier 0.85 and name it as you want. View at JSFiddle: https://jsfiddle.net/nake89/2k78jxpt/</description>
+    </item>
+    
+    <item>
+      <title>cPanel: Listing all domains</title>
+      <link>/posts/cpanel-listing-all-domains/</link>
+      <pubDate>Sun, 11 Feb 2018 19:46:38 +0000</pubDate>
+      
+      <guid>/posts/cpanel-listing-all-domains/</guid>
+      <description>I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.
+Usage: lsdom [OPTION] [INPUT] Example: lsdom [cPanel username] Lists domains for certain user by username or domain or for all users Options: -d [domain] Displays all domains of the user of the input domain. -a, --all Lists all domains. -v, --version Displays version. -h, --help This help page.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu: Loading Photos from Nikon D3300 DSLR Camera</title>
+      <link>/posts/ubuntu-loading-photos-from-nikon-d3300-dslr-camera/</link>
+      <pubDate>Sat, 10 Feb 2018 13:56:02 +0000</pubDate>
+      
+      <guid>/posts/ubuntu-loading-photos-from-nikon-d3300-dslr-camera/</guid>
+      <description>I had some trouble loading photos from my Nikon D3300 camera. I had the USB cable, which came with and connected my PC to it. The camera was on. I use Xubuntu. My file manager is Thunar. The camera would appear in the file manager. Whenever I would try to browse the files in the camera, Thunar would freeze. gvfsd-ghoto2 would use up a huge chunk of the CPU. I would then have to close Thunar and try again.</description>
+    </item>
+    
+    <item>
+      <title>cPanel: Listing all non-self-signed certificates</title>
+      <link>/posts/cpanel-listing-all-non-self-signed-certificates/</link>
+      <pubDate>Sat, 10 Feb 2018 13:39:23 +0000</pubDate>
+      
+      <guid>/posts/cpanel-listing-all-non-self-signed-certificates/</guid>
+      <description>I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.
+Usage: lrcert [OPTION] [INPUT] Example: lrcert [cPanel username] Options: -d [domain] Displays all certificates of the owner of the domain. -a, --all Lists all certificates of all cPanel users -v, --version Displays version. -h, --help This help page. GitHub: https://github.com/nake89/lrcert/</description>
+    </item>
+    
+    <item>
+      <title>Echoing multiline in linux terminal</title>
+      <link>/posts/echoing-multiline-in-linux-terminal/</link>
+      <pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate>
+      
+      <guid>/posts/echoing-multiline-in-linux-terminal/</guid>
+      <description>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
+user@server:~/projects/blog\_content$ echo &amp;quot;This file is&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ echo &amp;quot;multiline&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2.</description>
+    </item>
+    
+    <item>
+      <title>PHP: Namecheap.com API Class</title>
+      <link>/posts/php-namecheap-com-api-class/</link>
+      <pubDate>Tue, 16 May 2017 18:19:52 +0000</pubDate>
+      
+      <guid>/posts/php-namecheap-com-api-class/</guid>
+      <description>I built a simple to use class in PHP for the namecheap.com API. It supports all of Namecheap&amp;rsquo;s API methods. I released the code on GitHub. Example of usage:
+&amp;lt;?php require &amp;#39;namecheap.class.php&amp;#39;; $username = &amp;#39;YOUR USERNAME&amp;#39;; $apiKey = &amp;#39;YOUR API KEY&amp;#39;; $clientIp = &amp;#39;IP WHERE THIS YOUR SCRIPT IS HOSTED&amp;#39;; $namecheap = new Namecheap ($username, $apiKey, $clientIp) ; $data\[&amp;#34;Command&amp;#34;\] = &amp;#34;namecheap.ssl.getList&amp;#34;; $returned = $namecheap-&amp;gt;request($data); print\_r($returned) ?&amp;gt;GitHub release:https://github.com/nake89/namecheap</description>
+    </item>
+    
+    <item>
+      <title>End Bash Script Loop</title>
+      <link>/posts/end-bash-script-loop/</link>
+      <pubDate>Wed, 03 May 2017 16:24:51 +0000</pubDate>
+      
+      <guid>/posts/end-bash-script-loop/</guid>
+      <description>Sometimes when bash scripting you might want the ability to cancel your script&amp;rsquo;s loop with CTRL-C. Below is an exampl simple script which loops through a file of domains separated by line break and it digs the A record (IP address) of the domain. Read further to learn how to force quit this script.
+#!/bin/bash while read p; do dig $p A +short done &amp;lt;listofdomains.txt If your list of domains is large your and you want to quit this script, you cant.</description>
+    </item>
+    
+    <item>
+      <title>Reverse of hostname&#39;s IP</title>
+      <link>/posts/reverse-hostname-ip/</link>
+      <pubDate>Sun, 23 Apr 2017 13:06:00 +0000</pubDate>
+      
+      <guid>/posts/reverse-hostname-ip/</guid>
+      <description>Are you tired of typing host domain.tld and then typing host 123.123.123.123 just to be able to get the reverse of the ip of the hostname you&amp;rsquo;re interested in. I know I am. Here is my node.js commandline application as a solution for that problem. This software requires node.js to run, which you can download here: https://nodejs.org/en/download/
+Installation npm i fore-cli -g
+Usage fore domain.tld
+Example
+# fore kevinkivi.com hel1-77-86-179-68.ext.nebulacloud.fi GitHub repository: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Fix Certificate error with wget</title>
+      <link>/posts/certificate-error-with-wget/</link>
+      <pubDate>Sat, 22 Apr 2017 21:55:18 +0000</pubDate>
+      
+      <guid>/posts/certificate-error-with-wget/</guid>
+      <description>So, you are unable to download from https sources with wget. Instead you get the following error.
+ERROR: The certificate of \`www.google.com&#39; is not trusted. ERROR: The certificate of \`www.google.com&#39; hasn&#39;t got a known issuer. No problemo. This error is most likely occurring for missing root certificates. Simply install the ca-certificates package:
+sudo apt-get install ca-certificates This should work on Ubuntu and Debian derivatives.</description>
+    </item>
+    
+    <item>
+      <title>How to Search Contents of File in Linux</title>
+      <link>/posts/search-contents-file-linux/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      
+      <guid>/posts/search-contents-file-linux/</guid>
+      <description>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.</description>
+    </item>
+    
+    <item>
+      <title>How to pass command-line arguments in node.js</title>
+      <link>/posts/pass-command-line-arguments-node-js/</link>
+      <pubDate>Sat, 15 Apr 2017 16:43:25 +0000</pubDate>
+      
+      <guid>/posts/pass-command-line-arguments-node-js/</guid>
+      <description>So you want to pass information to your program. This can be quite easily achieved. The arguments are contained in process.argv. arg.js
+console.log(process.argv[0]); console.log(process.argv[1]); console.log(process.argv[2]); console.log(process.argv[3]); console.log(process.argv[4]); Testing the code:
+nake89@debian:~/nodeprojects/soacomp$ node arg.js what is this /home/nake89/.nvm/versions/node/v6.10.2/bin/node /home/nake89/nodeprojects/soacomp/arg.js what is this So the first line is the location of your node executable and the second one is the location of the script. These are largely unnecessary which is why the following script is so popular.</description>
+    </item>
+    
+    <item>
+      <title>Installing Vim UltiSnips on Debian 7 Wheezy</title>
+      <link>/posts/ultisnips-debian-wheezy/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      
+      <guid>/posts/ultisnips-debian-wheezy/</guid>
+      <description>I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First uncomment or add the following line to your /etc/apt/sources.list. This is because the version of Vim in the default repository is too old.</description>
+    </item>
+    
+    <item>
+      <title>Joker.com automation</title>
+      <link>/posts/joker-com-automation/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/posts/joker-com-automation/</guid>
+      <description>I&amp;rsquo;ve been working on automation for joker.com, so that I can unlock domains and order the auth-id (epp-key, transfer key) faster. It uses the joker.com API. I wrote it in node.js. It is still in development and I will add more functionality to this application. Here is the npm page: https://www.npmjs.com/package/joker-auto Github: https://github.com/nake89/joker-nodejs
+Joker Automation This is a node.js script for automating Joker.com services. Still in early development. Currently only logs you in and unlocks a domain and gives you the auth-id (transfer key) of a domain.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>/posts/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/about-me/</guid>
+      <description>I am a 31 year old software developer, husband and father from Vantaa, Finland. I speak fluent Finnish and English. My current passion is serverless services like (AWS Lambda, DynamoDB, Cloudflare Workers, etc) but I am interested in all new tech (and super old). In my free time I work on open source software.
+I am currently studying for the AWS Certified Developer exam.</description>
+    </item>
+    
+    <item>
+      <title>Bash: 10 Must Know shortcuts for bash</title>
+      <link>/posts/125/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/125/</guid>
+      <description>You can speed up your terminal operations immensely buy learning some handy shortcuts. 1 . Delete the previous word CTRL-W 2. Jumping to first word 3. Deleting word in front 4. Jumping forward 5. Jumping Backwards 6. Searching a previous command</description>
+    </item>
+    
+    <item>
+      <title>Get mysql privileges of all users</title>
+      <link>/posts/179/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/179/</guid>
+      <description>select * from information_schema.user_privileges; show grants for &amp;lsquo;username&amp;rsquo;@&amp;lsquo;10.0.0.%&#39;;
+select user from mysql.db where db=&#39;DB_NAME&#39;; ```</description>
+    </item>
+    
+    <item>
+      <title>Node.js: HTTPS on Express.js</title>
+      <link>/posts/173/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/173/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PERL: Install Cpanel:JSON:XS</title>
+      <link>/posts/161/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/161/</guid>
+      <description>asd</description>
+    </item>
+    
+    <item>
+      <title>PHP: What is the difference between private, public and protected</title>
+      <link>/posts/122/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/122/</guid>
+      <description>public, private and protected are properties of variables and functions in classes. They define the scope in which they can be in used. public is visible outside its class and can be called outside of the class. private is only visible inside its class and can only be called inside the class. protected is the same as private except for the fact that it is also visible and can be called in classes that extend its own class.</description>
+    </item>
+    
+    <item>
+      <title>tar cf relative path</title>
+      <link>/posts/176/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/176/</guid>
+      <description>https://stackoverflow.com/questions/18681595/tar-a-directory-but-dont-store-full-absolute-paths-in-the-archive</description>
+    </item>
+    
+  </channel>
+</rss>

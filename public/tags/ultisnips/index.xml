@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ultisnips on kevinkivi.com</title>
+    <link>/tags/ultisnips/</link>
+    <description>Recent content in ultisnips on kevinkivi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 15 Apr 2017 11:10:42 +0000</lastBuildDate><atom:link href="/tags/ultisnips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Vim UltiSnips on Debian 7 Wheezy</title>
+      <link>/posts/ultisnips-debian-wheezy/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      
+      <guid>/posts/ultisnips-debian-wheezy/</guid>
+      <description>I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First uncomment or add the following line to your /etc/apt/sources.list. This is because the version of Vim in the default repository is too old.</description>
+    </item>
+    
+  </channel>
+</rss>

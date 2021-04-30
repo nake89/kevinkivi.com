@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command-line on kevinkivi.com</title>
+    <link>/tags/command-line/</link>
+    <description>Recent content in Command-line on kevinkivi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 11 Feb 2018 19:46:38 +0000</lastBuildDate><atom:link href="/tags/command-line/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cPanel: Listing all domains</title>
+      <link>/posts/cpanel-listing-all-domains/</link>
+      <pubDate>Sun, 11 Feb 2018 19:46:38 +0000</pubDate>
+      
+      <guid>/posts/cpanel-listing-all-domains/</guid>
+      <description>I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.
+Usage: lsdom [OPTION] [INPUT] Example: lsdom [cPanel username] Lists domains for certain user by username or domain or for all users Options: -d [domain] Displays all domains of the user of the input domain. -a, --all Lists all domains. -v, --version Displays version. -h, --help This help page.</description>
+    </item>
+    
+    <item>
+      <title>cPanel: Listing all non-self-signed certificates</title>
+      <link>/posts/cpanel-listing-all-non-self-signed-certificates/</link>
+      <pubDate>Sat, 10 Feb 2018 13:39:23 +0000</pubDate>
+      
+      <guid>/posts/cpanel-listing-all-non-self-signed-certificates/</guid>
+      <description>I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.
+Usage: lrcert [OPTION] [INPUT] Example: lrcert [cPanel username] Options: -d [domain] Displays all certificates of the owner of the domain. -a, --all Lists all certificates of all cPanel users -v, --version Displays version. -h, --help This help page. GitHub: https://github.com/nake89/lrcert/</description>
+    </item>
+    
+    <item>
+      <title>Echoing multiline in linux terminal</title>
+      <link>/posts/echoing-multiline-in-linux-terminal/</link>
+      <pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate>
+      
+      <guid>/posts/echoing-multiline-in-linux-terminal/</guid>
+      <description>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
+user@server:~/projects/blog\_content$ echo &amp;quot;This file is&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ echo &amp;quot;multiline&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2.</description>
+    </item>
+    
+    <item>
+      <title>End Bash Script Loop</title>
+      <link>/posts/end-bash-script-loop/</link>
+      <pubDate>Wed, 03 May 2017 16:24:51 +0000</pubDate>
+      
+      <guid>/posts/end-bash-script-loop/</guid>
+      <description>Sometimes when bash scripting you might want the ability to cancel your script&amp;rsquo;s loop with CTRL-C. Below is an exampl simple script which loops through a file of domains separated by line break and it digs the A record (IP address) of the domain. Read further to learn how to force quit this script.
+#!/bin/bash while read p; do dig $p A +short done &amp;lt;listofdomains.txt If your list of domains is large your and you want to quit this script, you cant.</description>
+    </item>
+    
+    <item>
+      <title>How to Search Contents of File in Linux</title>
+      <link>/posts/search-contents-file-linux/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      
+      <guid>/posts/search-contents-file-linux/</guid>
+      <description>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.</description>
+    </item>
+    
+  </channel>
+</rss>

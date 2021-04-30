@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on kevinkivi.com</title>
+    <link>/tags/javascript/</link>
+    <description>Recent content in Javascript on kevinkivi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 21 Jul 2018 09:51:40 +0000</lastBuildDate><atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript: Cronometer ratio changer</title>
+      <link>/posts/cronometer-ratio-changer/</link>
+      <pubDate>Sat, 21 Jul 2018 09:51:40 +0000</pubDate>
+      
+      <guid>/posts/cronometer-ratio-changer/</guid>
+      <description>I created a script (with the help of my wife) which can change the ratio of foods. E.g.To make new food in Cronometer such as date paste, export &amp;ldquo;Dates&amp;rdquo; JSON from Cronometer. Then import the file. If the date paste is 15% water and 85% dates, then make the multiplier 0.85 and name it as you want. View at JSFiddle: https://jsfiddle.net/nake89/2k78jxpt/</description>
+    </item>
+    
+  </channel>
+</rss>

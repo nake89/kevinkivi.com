@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on kevinkivi.com</title>
+    <link>/tags/terminal/</link>
+    <description>Recent content in Terminal on kevinkivi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 03 Feb 2018 18:02:29 +0000</lastBuildDate><atom:link href="/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Echoing multiline in linux terminal</title>
+      <link>/posts/echoing-multiline-in-linux-terminal/</link>
+      <pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate>
+      
+      <guid>/posts/echoing-multiline-in-linux-terminal/</guid>
+      <description>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
+user@server:~/projects/blog\_content$ echo &amp;quot;This file is&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ echo &amp;quot;multiline&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2.</description>
+    </item>
+    
+    <item>
+      <title>Bash: 10 Must Know shortcuts for bash</title>
+      <link>/posts/125/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/125/</guid>
+      <description>You can speed up your terminal operations immensely buy learning some handy shortcuts. 1 . Delete the previous word CTRL-W 2. Jumping to first word 3. Deleting word in front 4. Jumping forward 5. Jumping Backwards 6. Searching a previous command</description>
+    </item>
+    
+  </channel>
+</rss>

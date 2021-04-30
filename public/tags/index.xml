@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on kevinkivi.com</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on kevinkivi.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Sep 2018 14:37:01 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash</title>
+      <link>/tags/bash/</link>
+      <pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate>
+      
+      <guid>/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSX</title>
+      <link>/tags/osx/</link>
+      <pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate>
+      
+      <guid>/tags/osx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/tags/git/</link>
+      <pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>/tags/php/</link>
+      <pubDate>Mon, 13 Aug 2018 17:55:17 +0000</pubDate>
+      
+      <guid>/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>/tags/javascript/</link>
+      <pubDate>Sat, 21 Jul 2018 09:51:40 +0000</pubDate>
+      
+      <guid>/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Command-line</title>
+      <link>/tags/command-line/</link>
+      <pubDate>Sun, 11 Feb 2018 19:46:38 +0000</pubDate>
+      
+      <guid>/tags/command-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camera</title>
+      <link>/tags/camera/</link>
+      <pubDate>Sat, 10 Feb 2018 13:56:02 +0000</pubDate>
+      
+      <guid>/tags/camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Desktop</title>
+      <link>/tags/desktop/</link>
+      <pubDate>Sat, 10 Feb 2018 13:56:02 +0000</pubDate>
+      
+      <guid>/tags/desktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>/tags/ubuntu/</link>
+      <pubDate>Sat, 10 Feb 2018 13:56:02 +0000</pubDate>
+      
+      <guid>/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>/tags/terminal/</link>
+      <pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate>
+      
+      <guid>/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>/tags/code/</link>
+      <pubDate>Tue, 16 May 2017 18:19:52 +0000</pubDate>
+      
+      <guid>/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node.js</title>
+      <link>/tags/node.js/</link>
+      <pubDate>Sun, 23 Apr 2017 13:06:00 +0000</pubDate>
+      
+      <guid>/tags/node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guides</title>
+      <link>/tags/guides/</link>
+      <pubDate>Sat, 22 Apr 2017 21:55:18 +0000</pubDate>
+      
+      <guid>/tags/guides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grep</title>
+      <link>/tags/grep/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      
+      <guid>/tags/grep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guide</title>
+      <link>/tags/guide/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      
+      <guid>/tags/guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>search contents of file</title>
+      <link>/tags/search-contents-of-file/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      
+      <guid>/tags/search-contents-of-file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>search string in file</title>
+      <link>/tags/search-string-in-file/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      
+      <guid>/tags/search-string-in-file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>7</title>
+      <link>/tags/7/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      
+      <guid>/tags/7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>/tags/debian/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      
+      <guid>/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ultisnips</title>
+      <link>/tags/ultisnips/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      
+      <guid>/tags/ultisnips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      
+      <guid>/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wheezy</title>
+      <link>/tags/wheezy/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      
+      <guid>/tags/wheezy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>api</title>
+      <link>/tags/api/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>/tags/automation/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>/tags/github/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>joker</title>
+      <link>/tags/joker/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/joker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>joker.com</title>
+      <link>/tags/joker.com/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/joker.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node</title>
+      <link>/tags/node/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>/tags/nodejs/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>npm</title>
+      <link>/tags/npm/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      
+      <guid>/tags/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>/tags/uncategorized/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/uncategorized/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
