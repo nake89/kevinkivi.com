@@ -1,6 +1,6 @@
 ---
 title: "Autostart any GUI app in Manjaro"
-date: 2021-04-30T20:33:00+02:00
+date: 2021-04-30T19:33:00+02:00
 draft: false
 tags: ['linux', 'manjaro']
 ---
