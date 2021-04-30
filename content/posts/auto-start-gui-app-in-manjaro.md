@@ -1,13 +1,14 @@
 ---
-title: "How to autostart any GUI app in Manjaro"
+title: "Autostart any GUI app in Manjaro"
 date: 2021-04-30T20:33:00+02:00
 draft: false
+tags: ['linux', 'manjaro']
 ---
 
 In this example I will autostart the GUI package manager of Manjaro.
 
 Create a file e.g. `~/.config/autostart/pamac-manager.desktop`
-In that file put
+In that file put:
 ```
 [Desktop Entry]
 Terminal=false
