@@ -16,7 +16,7 @@
 <link rel=mask-icon href=safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.86.0">
+<meta name=generator content="Hugo 0.87.0">
 <link rel=alternate type=application/rss+xml href=/tags/ag/index.xml>
 <meta property="og:title" content="ag">
 <meta property="og:description" content>
@@ -47,6 +47,20 @@
 <header class=page-header>
 <h1>ag</h1>
 </header>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>
+Add GSI to existing DynamodDB table (nodejs, aws-sdk)
+</h2>
+</header>
+<section class=entry-content>
+<p>If you are using the Serverless Framework, you can create DynamodDB and add one GSI with cloudformation syntax. How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/ Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
+That’s all fine until you need to add another GSI. You can’t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws....</p>
+</section>
+<footer class=entry-footer>August 5, 2021
+</footer>
+<a class=entry-link aria-label="post link to Add GSI to existing DynamodDB table (nodejs, aws-sdk)" href=/posts/add-gsi-to-existing-table/></a>
+</article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>
