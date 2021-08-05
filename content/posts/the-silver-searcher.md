@@ -6,6 +6,7 @@ tags: ["linux", "cli", "terminal", "grep", "ag", "ack"]
 ---
 
 `ack` is a famous code search tool to replace `grep` (in a lot of use cases): https://beyondgrep.com/why-ack/
+
 Now there is something even better. There is `ag` aka The Silver Searcher: [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 It is like ack, but faster.
 

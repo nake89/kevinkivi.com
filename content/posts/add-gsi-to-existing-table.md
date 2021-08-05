@@ -6,8 +6,11 @@ tags: ["linux", "cli", "terminal", "grep", "ag", "ack"]
 ---
 
 If you are using the Serverless Framework, you can create DynamodDB and add **one** GSI with cloudformation syntax.
+
 How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
+
 Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
+
 Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
 
 That's all fine until you need to add another GSI. You can't do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.amazon.com/tools/
