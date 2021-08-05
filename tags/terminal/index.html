@@ -54,7 +54,10 @@ Add GSI to existing DynamodDB table (nodejs, aws-sdk)
 </h2>
 </header>
 <section class=entry-content>
-<p>If you are using the Serverless Framework, you can create DynamodDB and add one GSI with cloudformation syntax. How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/ Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
+<p>If you are using the Serverless Framework, you can create DynamodDB and add one GSI with cloudformation syntax.
+How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
+Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
+Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
 That’s all fine until you need to add another GSI. You can’t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws....</p>
 </section>
 <footer class=entry-footer>August 5, 2021
@@ -68,7 +71,8 @@ Say goodbye to grep
 </h2>
 </header>
 <section class=entry-content>
-<p>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/ Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
+<p>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
+Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
 Why not just grep? Hella fast. Like really really fast. It is beautifully optimized C. It ignores files from .gitignore Instead of doing this with grep:
 grep -R --exclude-dir=node_modules 'foobar' /path/to/your/code You can just do (if you have node_modules in your ....</p>
 </section>
