@@ -2,10 +2,10 @@
 title: "Add GSI to existing DynamodDB table (nodejs, aws-sdk)"
 date: 2021-08-05T19:11:00+02:00
 draft: false
-tags: ["linux", "cli", "terminal", "grep", "ag", "ack"]
+tags: ["dynamodb", "gsi", "aws", "aws-sdk", "nodejs"]
 ---
 
-If you are using the Serverless Framework, you can create DynamodDB and add **one** GSI with cloudformation syntax.
+If you are using the Serverless Framework, you can create DynamodDB and add **one** GSI (Global Secondary Index) with cloudformation syntax.
 
 How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
 
