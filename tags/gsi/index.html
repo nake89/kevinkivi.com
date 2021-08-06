@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>grep | kevinkivi.com</title>
+<title>gsi | kevinkivi.com</title>
 <meta name=keywords content>
 <meta name=description content>
 <meta name=author content>
-<link rel=canonical href=/tags/grep/>
+<link rel=canonical href=/tags/gsi/>
 <link href=/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css integrity="sha256-dGqGtYuysFK15N+CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet" as=style>
 <link rel=icon href=favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=favicon-16x16.png>
@@ -17,13 +17,13 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
-<link rel=alternate type=application/rss+xml href=/tags/grep/index.xml>
-<meta property="og:title" content="grep">
+<link rel=alternate type=application/rss+xml href=/tags/gsi/index.xml>
+<meta property="og:title" content="gsi">
 <meta property="og:description" content>
 <meta property="og:type" content="website">
-<meta property="og:url" content="/tags/grep/">
+<meta property="og:url" content="/tags/gsi/">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="grep">
+<meta name=twitter:title content="gsi">
 <meta name=twitter:description content>
 </head>
 <body class="list dark" id=top>
@@ -45,36 +45,24 @@
 </header>
 <main class=main>
 <header class=page-header>
-<h1>grep</h1>
+<h1>gsi</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>
-Say goodbye to grep
+Add GSI to existing DynamodDB table (nodejs, aws-sdk)
 </h2>
 </header>
 <section class=entry-content>
-<p>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
-Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
-Why not just grep? Hella fast. Like really really fast. It is beautifully optimized C. It ignores files from .gitignore Instead of doing this with grep:
-grep -R --exclude-dir=node_modules 'foobar' /path/to/your/code You can just do (if you have node_modules in your ....</p>
+<p>If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
+How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
+Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
+Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
+That’s all fine until you need to add another GSI. You can’t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws....</p>
 </section>
-<footer class=entry-footer>July 25, 2021
+<footer class=entry-footer>August 5, 2021
 </footer>
-<a class=entry-link aria-label="post link to Say goodbye to grep" href=/posts/the-silver-searcher/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>
-How to Search Contents of File in Linux
-</h2>
-</header>
-<section class=entry-content>
-<p>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script....</p>
-</section>
-<footer class=entry-footer>April 15, 2017
-</footer>
-<a class=entry-link aria-label="post link to How to Search Contents of File in Linux" href=/posts/search-contents-file-linux/></a>
+<a class=entry-link aria-label="post link to Add GSI to existing DynamodDB table (nodejs, aws-sdk)" href=/posts/add-gsi-to-existing-table/></a>
 </article>
 </main><footer class=footer>
 <span>&copy; 2021 <a href>kevinkivi.com</a></span>
