@@ -1,8 +1,8 @@
 ---
 title: "Passwords in Email"
-date: 2021-08-17T17:51:00+02:00
+date: 2021-08-17T18:28:00+02:00
 draft: false
-tags: ["dynamodb", "gsi", "aws", "aws-sdk", "nodejs"]
+tags: ["password", "plaintext", "hash", "information security"]
 ---
 
 It happened again. I created an account to a service (a domain registrar) and their welcome email contained the password I just gave them. You might think that that is fine, because _maybe_ they didn't store that password plain text in their DB. Maybe they hashed it. If you are confused about what _hashing_ means, then read this [auth0 article](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).
