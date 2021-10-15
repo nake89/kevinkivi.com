@@ -1,6 +1,6 @@
 ---
 title: "Local development is a joke (sometimes)"
-date: 2021-10-15T17:55:00+02:00
+date: 2021-10-15T15:50:00+02:00
 draft: false
 tags:
   [
