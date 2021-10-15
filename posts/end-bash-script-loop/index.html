@@ -17,7 +17,7 @@
 <link rel=mask-icon href=safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.1">
 <meta property="og:title" content="End Bash Script Loop">
 <meta property="og:description" content="Sometimes when bash scripting you might want the ability to cancel your script&rsquo;s loop with CTRL-C. Below is an exampl simple script which loops through a file of domains separated by line break and it digs the A record (IP address) of the domain. Read further to learn how to force quit this script.
 #!/bin/bash while read p; do dig $p A +short done <listofdomains.txt If your list of domains is large your and you want to quit this script, you cant.">
@@ -60,12 +60,12 @@ End Bash Script Loop
 </header>
 <div class=post-content>
 <p>Sometimes when bash scripting you might want the ability to cancel your script&rsquo;s loop with CTRL-C. Below is an exampl simple script which loops through a file of domains separated by line break and it digs the A record (IP address) of the domain. Read further to learn how to force quit this script.</p>
-<pre><code>#!/bin/bash
+<pre tabindex=0><code>#!/bin/bash
 while read p; do
     dig $p A +short
 done &lt;listofdomains.txt
 </code></pre><p>If your list of domains is large your and you want to quit this script, you cant. Pressing CTRL-C will not work. You need to add <code>trap "echo Script ended; exit;" SIGINT SIGTERM</code> to the beginning of your script. E.g.</p>
-<pre><code>#!/bin/bash
+<pre tabindex=0><code>#!/bin/bash
 trap &quot;echo Script ended; exit;&quot; SIGINT SIGTERM
 while read p; do
     dig $p A +short

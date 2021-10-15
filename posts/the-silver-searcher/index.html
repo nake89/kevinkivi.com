@@ -19,7 +19,7 @@ grep -R --exclude-dir=node_modules 'foobar' /path/to/your/code You can just do (
 <link rel=mask-icon href=safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.1">
 <meta property="og:title" content="Say goodbye to grep">
 <meta property="og:description" content="ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
 Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
@@ -74,11 +74,11 @@ It is like ack, but faster.</p>
 <li>It ignores files from <code>.gitignore</code></li>
 </ul>
 <p>Instead of doing this with grep:</p>
-<pre><code>grep -R --exclude-dir=node_modules 'foobar' /path/to/your/code
+<pre tabindex=0><code>grep -R --exclude-dir=node_modules 'foobar' /path/to/your/code
 </code></pre><p>You can just do (if you have node_modules in your .gitignore):</p>
-<pre><code>ag foobar /path/to/your/code
+<pre tabindex=0><code>ag foobar /path/to/your/code
 </code></pre><p>You can also ignore folders with this option:</p>
-<pre><code>ag --ignore file_or_folder_name_to_ignore /path/to/your/code
+<pre tabindex=0><code>ag --ignore file_or_folder_name_to_ignore /path/to/your/code
 </code></pre>
 </div>
 <footer class=post-footer>

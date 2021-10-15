@@ -16,7 +16,7 @@
 <link rel=mask-icon href=safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.1">
 <meta property="og:title" content="Installing Vim UltiSnips on Debian 7 Wheezy">
 <meta property="og:description" content="I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First uncomment or add the following line to your /etc/apt/sources.list. This is because the version of Vim in the default repository is too old.">
 <meta property="og:type" content="article">
@@ -57,9 +57,9 @@ Installing Vim UltiSnips on Debian 7 Wheezy
 </header>
 <div class=post-content>
 <p>I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First <a href=https://www.howtogeek.com/118389/how-to-comment-out-and-uncomment-lines-in-a-configuration-file/>uncomment</a> or add the following line to your <code>/etc/apt/sources.list</code>. This is because the version of Vim in the default repository is too old. You can read more about backports <a href=https://backports.debian.org/>here</a>.</p>
-<pre><code>deb http://ftp.debian.org/debian wheezy-backports main
+<pre tabindex=0><code>deb http://ftp.debian.org/debian wheezy-backports main
 </code></pre><p>Run the following commands:</p>
-<pre><code>sudo apt-get update # always remember to do this
+<pre tabindex=0><code>sudo apt-get update # always remember to do this
 sudo apt-get remove vim # remove the old Vim which doesn't have python
 sudo apt-get remove vim-common # you can try to do this without this line. I personally needed to this.
 sudo apt-get -t wheezy-backports install vim-nox # Installing the correct compiled version of Vim which has Python.
