@@ -1,6 +1,6 @@
 title: "kevinkivi.com"
 theme: "PaperMod"
-
+googleAnalytics: "UA-97807308-1"
 
 params:
     defaultTheme: dark
