@@ -1,6 +1,6 @@
 ---
 title: 'How to enable vim mode in zsh'
-date: 2022-08-12T21:24:00+02:00
+date: 2022-08-12T20:24:00+02:00
 draft: false
 tags: ['shell', 'vim', 'zsh']
 ---
