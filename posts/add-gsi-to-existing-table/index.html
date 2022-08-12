@@ -1,158 +1,72 @@
-<!doctype html><html lang=en dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>Add GSI to existing DynamodDB table (nodejs, aws-sdk) | kevinkivi.com</title>
-<meta name=keywords content="dynamodb,gsi,aws,aws-sdk,nodejs">
-<meta name=description content="If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Add GSI to existing DynamodDB table (nodejs, aws-sdk) | kevinkivi.com</title><meta name=keywords content="dynamodb,gsi,aws,aws-sdk,nodejs"><meta name=description content="If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
 How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
 Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
 Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
-That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.">
-<meta name=author content>
-<link rel=canonical href=/posts/add-gsi-to-existing-table/>
-<link href=/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css integrity="sha256-dGqGtYuysFK15N+CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet" as=style>
-<link rel=icon href=favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=favicon-32x32.png>
-<link rel=apple-touch-icon href=apple-touch-icon.png>
-<link rel=mask-icon href=safari-pinned-tab.svg>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.3">
-<meta property="og:title" content="Add GSI to existing DynamodDB table (nodejs, aws-sdk)">
-<meta property="og:description" content="If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
+That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws."><meta name=author content><link rel=canonical href=/posts/add-gsi-to-existing-table/><link href=/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css integrity="sha256-dGqGtYuysFK15N+CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet" as=style><link rel=icon href=favicon.ico><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.png><link rel=apple-touch-icon href=apple-touch-icon.png><link rel=mask-icon href=safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.101.0"><meta property="og:title" content="Add GSI to existing DynamodDB table (nodejs, aws-sdk)"><meta property="og:description" content="If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
 How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
 Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
 Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
-That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="/posts/add-gsi-to-existing-table/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-08-05T19:11:00+02:00">
-<meta property="article:modified_time" content="2021-08-05T19:11:00+02:00">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Add GSI to existing DynamodDB table (nodejs, aws-sdk)">
-<meta name=twitter:description content="If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
+That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws."><meta property="og:type" content="article"><meta property="og:url" content="/posts/add-gsi-to-existing-table/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-08-05T19:11:00+02:00"><meta property="article:modified_time" content="2021-08-05T19:11:00+02:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Add GSI to existing DynamodDB table (nodejs, aws-sdk)"><meta name=twitter:description content="If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
 How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
 Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
 Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
-That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"/posts/"},{"@type":"ListItem","position":3,"name":"Add GSI to existing DynamodDB table (nodejs, aws-sdk)","item":"/posts/add-gsi-to-existing-table/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Add GSI to existing DynamodDB table (nodejs, aws-sdk)","name":"Add GSI to existing DynamodDB table (nodejs, aws-sdk)","description":"If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.\nHow to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration\nHere is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/\nOfficial docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html\nThat\u0026rsquo;s all fine until you need to add another GSI. You can\u0026rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.","keywords":["dynamodb","gsi","aws","aws-sdk","nodejs"],"articleBody":"If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.\nHow to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration\nHere is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/\nOfficial docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html\nThat’s all fine until you need to add another GSI. You can’t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.amazon.com/tools/\nHere is the code snippet to create a new GSI on an existing DynamodDB table. The AttributeDefinitions need to reflect the new GSI, not the existing table.\nconst { DynamoDBClient, UpdateTableCommand, } = require(\"@aws-sdk/client-dynamodb\"); const tableName = \"YOUR DYNAMODB TABLE NAME GOES HERE\"; const region = \"YOUR REGION, e.g. us-east-1\"; const accessKeyId = \"Your api user access key with access to dynamodb\"; const secretAccessKey = \"Your api user access secret\"; (async () = { const config = { region, credentials: { accessKeyId, secretAccessKey, }, }; console.log(config); const client = new DynamoDBClient(config); const params = { TableName: tableName, AttributeDefinitions: [ { AttributeName: \"sk\", AttributeType: \"S\" }, { AttributeName: \"pk\", AttributeType: \"S\" }, ], GlobalSecondaryIndexUpdates: [ { Create: { IndexName: \"sk-pk-index\", KeySchema: [ { AttributeName: \"sk\", KeyType: \"HASH\" }, { AttributeName: \"pk\", KeyType: \"RANGE\" }, ], Projection: { ProjectionType: \"ALL\" }, ProvisionedThroughput: { ReadCapacityUnits: 1, WriteCapacityUnits: 1, }, }, }, ], }; const command = new UpdateTableCommand(params); try { await client.send(command); } catch (e) { console.error(e); } console.log(JSON.stringify(command)); })();  https://stackoverflow.com/questions/36918408/unable-to-add-gsi-to-dynamodb-table-using-cloudformation  ","wordCount":"251","inLanguage":"en","datePublished":"2021-08-05T19:11:00+02:00","dateModified":"2021-08-05T19:11:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/add-gsi-to-existing-table/"},"publisher":{"@type":"Organization","name":"kevinkivi.com","logo":{"@type":"ImageObject","url":"favicon.ico"}}}</script>
-</head>
-<body class=dark id=top>
-<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-</noscript>
-<header class=header>
-<nav class=nav>
-<div class=logo>
-<a href accesskey=h title="kevinkivi.com (Alt + H)">kevinkivi.com</a>
-<span class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</button>
-</span>
-</div>
-<ul id=menu onscroll=menu_on_scroll()></ul>
-</nav>
-</header>
-<main class=main>
-<article class=post-single>
-<header class=post-header>
-<h1 class=post-title>
-Add GSI to existing DynamodDB table (nodejs, aws-sdk)
-</h1>
-<div class=post-meta>August 5, 2021
-</div>
-</header>
-<div class=post-content>
-<p>If you are using the Serverless Framework, you can create DynamodDB and add <strong>one</strong> GSI (Global Secondary Index) with cloudformation syntax.</p>
-<p>How to add table: <a href=https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration>https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration</a></p>
-<p>Here is the syntax to add GSI: <a href=https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/>https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/</a></p>
-<p>Official docs related to GSI cloudformation syntax: <a href=https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html</a></p>
-<p>That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: <a href=https://aws.amazon.com/tools/>https://aws.amazon.com/tools/</a></p>
-<p>Here is the code snippet to create a new GSI on an existing DynamodDB table.
-The <code>AttributeDefinitions</code> need to reflect the new GSI, <em>not</em> the existing table.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>const</span> {
-  <span style=color:#a6e22e>DynamoDBClient</span>,
-  <span style=color:#a6e22e>UpdateTableCommand</span>,
-} <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;@aws-sdk/client-dynamodb&#34;</span>);
-
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>tableName</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;YOUR DYNAMODB TABLE NAME GOES HERE&#34;</span>;
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>region</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;YOUR REGION, e.g. us-east-1&#34;</span>;
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>accessKeyId</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Your api user access key with access to dynamodb&#34;</span>;
-<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>secretAccessKey</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Your api user access secret&#34;</span>;
-
-(<span style=color:#66d9ef>async</span> () =&gt; {
-  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>config</span> <span style=color:#f92672>=</span> {
-    <span style=color:#a6e22e>region</span>,
-    <span style=color:#a6e22e>credentials</span><span style=color:#f92672>:</span> {
-      <span style=color:#a6e22e>accessKeyId</span>,
-      <span style=color:#a6e22e>secretAccessKey</span>,
-    },
-  };
-  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>config</span>);
-  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>client</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>DynamoDBClient</span>(<span style=color:#a6e22e>config</span>);
-  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>params</span> <span style=color:#f92672>=</span> {
-    <span style=color:#a6e22e>TableName</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>tableName</span>,
-    <span style=color:#a6e22e>AttributeDefinitions</span><span style=color:#f92672>:</span> [
-      { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;sk&#34;</span>, <span style=color:#a6e22e>AttributeType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;S&#34;</span> },
-      { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;pk&#34;</span>, <span style=color:#a6e22e>AttributeType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;S&#34;</span> },
-    ],
-    <span style=color:#a6e22e>GlobalSecondaryIndexUpdates</span><span style=color:#f92672>:</span> [
-      {
-        <span style=color:#a6e22e>Create</span><span style=color:#f92672>:</span> {
-          <span style=color:#a6e22e>IndexName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;sk-pk-index&#34;</span>,
-          <span style=color:#a6e22e>KeySchema</span><span style=color:#f92672>:</span> [
-            { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;sk&#34;</span>, <span style=color:#a6e22e>KeyType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;HASH&#34;</span> },
-            { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;pk&#34;</span>, <span style=color:#a6e22e>KeyType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;RANGE&#34;</span> },
-          ],
-          <span style=color:#a6e22e>Projection</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>ProjectionType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;ALL&#34;</span> },
-          <span style=color:#a6e22e>ProvisionedThroughput</span><span style=color:#f92672>:</span> {
-            <span style=color:#a6e22e>ReadCapacityUnits</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>,
-            <span style=color:#a6e22e>WriteCapacityUnits</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>,
-          },
-        },
-      },
-    ],
-  };
-  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>command</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>UpdateTableCommand</span>(<span style=color:#a6e22e>params</span>);
-  <span style=color:#66d9ef>try</span> {
-    <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>client</span>.<span style=color:#a6e22e>send</span>(<span style=color:#a6e22e>command</span>);
-  } <span style=color:#66d9ef>catch</span> (<span style=color:#a6e22e>e</span>) {
-    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>error</span>(<span style=color:#a6e22e>e</span>);
-  }
-  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>JSON</span>.<span style=color:#a6e22e>stringify</span>(<span style=color:#a6e22e>command</span>));
-})();
-</code></pre></div><ol>
-<li><a href=https://stackoverflow.com/questions/36918408/unable-to-add-gsi-to-dynamodb-table-using-cloudformation>https://stackoverflow.com/questions/36918408/unable-to-add-gsi-to-dynamodb-table-using-cloudformation</a></li>
-</ol>
-</div>
-<footer class=post-footer>
-<ul class=post-tags>
-<li><a href=/tags/dynamodb/>dynamodb</a></li>
-<li><a href=/tags/gsi/>gsi</a></li>
-<li><a href=/tags/aws/>aws</a></li>
-<li><a href=/tags/aws-sdk/>aws-sdk</a></li>
-<li><a href=/tags/nodejs/>nodejs</a></li>
-</ul>
-</footer>
-</article>
-</main><footer class=footer>
-<span>&copy; 2021 <a href>kevinkivi.com</a></span>
+That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"/posts/"},{"@type":"ListItem","position":3,"name":"Add GSI to existing DynamodDB table (nodejs, aws-sdk)","item":"/posts/add-gsi-to-existing-table/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Add GSI to existing DynamodDB table (nodejs, aws-sdk)","name":"Add GSI to existing DynamodDB table (nodejs, aws-sdk)","description":"If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.\nHow to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration\nHere is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/\nOfficial docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html\nThat\u0026rsquo;s all fine until you need to add another GSI. You can\u0026rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.","keywords":["dynamodb","gsi","aws","aws-sdk","nodejs"],"articleBody":"If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.\nHow to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration\nHere is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/\nOfficial docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html\nThat’s all fine until you need to add another GSI. You can’t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.amazon.com/tools/\nHere is the code snippet to create a new GSI on an existing DynamodDB table. The AttributeDefinitions need to reflect the new GSI, not the existing table.\nconst { DynamoDBClient, UpdateTableCommand, } = require(\"@aws-sdk/client-dynamodb\"); const tableName = \"YOUR DYNAMODB TABLE NAME GOES HERE\"; const region = \"YOUR REGION, e.g. us-east-1\"; const accessKeyId = \"Your api user access key with access to dynamodb\"; const secretAccessKey = \"Your api user access secret\"; (async () =\u003e { const config = { region, credentials: { accessKeyId, secretAccessKey, }, }; console.log(config); const client = new DynamoDBClient(config); const params = { TableName: tableName, AttributeDefinitions: [ { AttributeName: \"sk\", AttributeType: \"S\" }, { AttributeName: \"pk\", AttributeType: \"S\" }, ], GlobalSecondaryIndexUpdates: [ { Create: { IndexName: \"sk-pk-index\", KeySchema: [ { AttributeName: \"sk\", KeyType: \"HASH\" }, { AttributeName: \"pk\", KeyType: \"RANGE\" }, ], Projection: { ProjectionType: \"ALL\" }, ProvisionedThroughput: { ReadCapacityUnits: 1, WriteCapacityUnits: 1, }, }, }, ], }; const command = new UpdateTableCommand(params); try { await client.send(command); } catch (e) { console.error(e); } console.log(JSON.stringify(command)); })(); https://stackoverflow.com/questions/36918408/unable-to-add-gsi-to-dynamodb-table-using-cloudformation ","wordCount":"251","inLanguage":"en","datePublished":"2021-08-05T19:11:00+02:00","dateModified":"2021-08-05T19:11:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/add-gsi-to-existing-table/"},"publisher":{"@type":"Organization","name":"kevinkivi.com","logo":{"@type":"ImageObject","url":"favicon.ico"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><noscript><style type=text/css>#theme-toggle,.top-link{display:none}</style></noscript><header class=header><nav class=nav><div class=logo><a href accesskey=h title="kevinkivi.com (Alt + H)">kevinkivi.com</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu onscroll=menu_on_scroll()></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Add GSI to existing DynamodDB table (nodejs, aws-sdk)</h1><div class=post-meta>August 5, 2021</div></header><div class=post-content><p>If you are using the Serverless Framework, you can create DynamodDB and add <strong>one</strong> GSI (Global Secondary Index) with cloudformation syntax.</p><p>How to add table: <a href=https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration>https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration</a></p><p>Here is the syntax to add GSI: <a href=https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/>https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/</a></p><p>Official docs related to GSI cloudformation syntax: <a href=https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html>https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html</a></p><p>That&rsquo;s all fine until you need to add another GSI. You can&rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: <a href=https://aws.amazon.com/tools/>https://aws.amazon.com/tools/</a></p><p>Here is the code snippet to create a new GSI on an existing DynamodDB table.
+The <code>AttributeDefinitions</code> need to reflect the new GSI, <em>not</em> the existing table.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#66d9ef>const</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>DynamoDBClient</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>UpdateTableCommand</span>,
+</span></span><span style=display:flex><span>} <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;@aws-sdk/client-dynamodb&#34;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>tableName</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;YOUR DYNAMODB TABLE NAME GOES HERE&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>region</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;YOUR REGION, e.g. us-east-1&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>accessKeyId</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Your api user access key with access to dynamodb&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>secretAccessKey</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Your api user access secret&#34;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>(<span style=color:#66d9ef>async</span> () =&gt; {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>config</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>region</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>credentials</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>accessKeyId</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>secretAccessKey</span>,
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>  };
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>config</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>client</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>DynamoDBClient</span>(<span style=color:#a6e22e>config</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>params</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>TableName</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>tableName</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>AttributeDefinitions</span><span style=color:#f92672>:</span> [
+</span></span><span style=display:flex><span>      { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;sk&#34;</span>, <span style=color:#a6e22e>AttributeType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;S&#34;</span> },
+</span></span><span style=display:flex><span>      { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;pk&#34;</span>, <span style=color:#a6e22e>AttributeType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;S&#34;</span> },
+</span></span><span style=display:flex><span>    ],
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>GlobalSecondaryIndexUpdates</span><span style=color:#f92672>:</span> [
+</span></span><span style=display:flex><span>      {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>Create</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>IndexName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;sk-pk-index&#34;</span>,
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>KeySchema</span><span style=color:#f92672>:</span> [
+</span></span><span style=display:flex><span>            { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;sk&#34;</span>, <span style=color:#a6e22e>KeyType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;HASH&#34;</span> },
+</span></span><span style=display:flex><span>            { <span style=color:#a6e22e>AttributeName</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;pk&#34;</span>, <span style=color:#a6e22e>KeyType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;RANGE&#34;</span> },
+</span></span><span style=display:flex><span>          ],
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>Projection</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>ProjectionType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;ALL&#34;</span> },
+</span></span><span style=display:flex><span>          <span style=color:#a6e22e>ProvisionedThroughput</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>ReadCapacityUnits</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>,
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>WriteCapacityUnits</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>,
+</span></span><span style=display:flex><span>          },
+</span></span><span style=display:flex><span>        },
+</span></span><span style=display:flex><span>      },
+</span></span><span style=display:flex><span>    ],
+</span></span><span style=display:flex><span>  };
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>command</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>UpdateTableCommand</span>(<span style=color:#a6e22e>params</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>try</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>client</span>.<span style=color:#a6e22e>send</span>(<span style=color:#a6e22e>command</span>);
+</span></span><span style=display:flex><span>  } <span style=color:#66d9ef>catch</span> (<span style=color:#a6e22e>e</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>error</span>(<span style=color:#a6e22e>e</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>JSON</span>.<span style=color:#a6e22e>stringify</span>(<span style=color:#a6e22e>command</span>));
+</span></span><span style=display:flex><span>})();
+</span></span></code></pre></div><ol><li><a href=https://stackoverflow.com/questions/36918408/unable-to-add-gsi-to-dynamodb-table-using-cloudformation>https://stackoverflow.com/questions/36918408/unable-to-add-gsi-to-dynamodb-table-using-cloudformation</a></li></ol></div><footer class=post-footer><ul class=post-tags><li><a href=/tags/dynamodb/>dynamodb</a></li><li><a href=/tags/gsi/>gsi</a></li><li><a href=/tags/aws/>aws</a></li><li><a href=/tags/aws-sdk/>aws-sdk</a></li><li><a href=/tags/nodejs/>nodejs</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2022 <a href>kevinkivi.com</a></span>
 <span>&#183;</span>
 <span>Powered by <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
 <span>&#183;</span>
-<span>Theme <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
-</a>
-<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</body>
-</html>
+<span>Theme <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script defer src=/assets/js/highlight.min.e85ad0406048e8176e1c7661b25d5c69297ddfe41dc4124cf75ecb99a4f7b3d1.js integrity="sha256-6FrQQGBI6BduHHZhsl1caSl93+QdxBJM917LmaT3s9E=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById("menu").scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById("menu").scrollLeft)}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
