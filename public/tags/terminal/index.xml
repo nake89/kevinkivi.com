@@ -1,29 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Terminal on kevinkivi.com</title>
-    <link>/tags/terminal/</link>
-    <description>Recent content in Terminal on kevinkivi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 03 Feb 2018 18:02:29 +0000</lastBuildDate><atom:link href="/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Echoing multiline in linux terminal</title>
-      <link>/posts/echoing-multiline-in-linux-terminal/</link>
-      <pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate>
-      
-      <guid>/posts/echoing-multiline-in-linux-terminal/</guid>
-      <description>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
-user@server:~/projects/blog\_content$ echo &amp;quot;This file is&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ echo &amp;quot;multiline&amp;quot; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2.</description>
-    </item>
-    
-    <item>
-      <title>Bash: 10 Must Know shortcuts for bash</title>
-      <link>/posts/125/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/125/</guid>
-      <description>You can speed up your terminal operations immensely buy learning some handy shortcuts. 1 . Delete the previous word CTRL-W 2. Jumping to first word 3. Deleting word in front 4. Jumping forward 5. Jumping Backwards 6. Searching a previous command</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Terminal on kevinkivi.com</title><link>https://kevinkivi.com/tags/terminal/</link><description>Recent content in Terminal on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Sun, 25 Jul 2021 10:11:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>Say goodbye to grep</title><link>https://kevinkivi.com/posts/the-silver-searcher/</link><pubDate>Sun, 25 Jul 2021 10:11:00 +0200</pubDate><guid>https://kevinkivi.com/posts/the-silver-searcher/</guid><description>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
+Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
+Why not just grep? Hella fast. Like really really fast. It is beautifully optimized C. It ignores files from .gitignore Instead of doing this with grep:
+grep -R --exclude-dir=node_modules &amp;#39;foobar&amp;#39; /path/to/your/code You can just do (if you have node_modules in your .</description></item><item><title>Echoing multiline in linux terminal</title><link>https://kevinkivi.com/posts/echoing-multiline-in-linux-terminal/</link><pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate><guid>https://kevinkivi.com/posts/echoing-multiline-in-linux-terminal/</guid><description>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
+user@server:~/projects/blog\_content$ echo &amp;#34;This file is&amp;#34; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ echo &amp;#34;multiline&amp;#34; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2.</description></item></channel></rss>

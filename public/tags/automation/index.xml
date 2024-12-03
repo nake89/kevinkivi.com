@@ -1,20 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>automation on kevinkivi.com</title>
-    <link>/tags/automation/</link>
-    <description>Recent content in automation on kevinkivi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Oct 2016 11:47:48 +0000</lastBuildDate><atom:link href="/tags/automation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Joker.com automation</title>
-      <link>/posts/joker-com-automation/</link>
-      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
-      
-      <guid>/posts/joker-com-automation/</guid>
-      <description>I&amp;rsquo;ve been working on automation for joker.com, so that I can unlock domains and order the auth-id (epp-key, transfer key) faster. It uses the joker.com API. I wrote it in node.js. It is still in development and I will add more functionality to this application. Here is the npm page: https://www.npmjs.com/package/joker-auto Github: https://github.com/nake89/joker-nodejs
-Joker Automation This is a node.js script for automating Joker.com services. Still in early development. Currently only logs you in and unlocks a domain and gives you the auth-id (transfer key) of a domain.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Automation on kevinkivi.com</title><link>https://kevinkivi.com/tags/automation/</link><description>Recent content in Automation on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Sun, 09 Oct 2016 11:47:48 +0000</lastBuildDate><atom:link href="https://kevinkivi.com/tags/automation/index.xml" rel="self" type="application/rss+xml"/><item><title>Joker.com automation</title><link>https://kevinkivi.com/posts/joker-com-automation/</link><pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate><guid>https://kevinkivi.com/posts/joker-com-automation/</guid><description>I&amp;rsquo;ve been working on automation for joker.com, so that I can unlock domains and order the auth-id (epp-key, transfer key) faster. It uses the joker.com API. I wrote it in node.js. It is still in development and I will add more functionality to this application. Here is the npm page: https://www.npmjs.com/package/joker-auto Github: https://github.com/nake89/joker-nodejs
+Joker Automation This is a node.js script for automating Joker.com services. Still in early development. Currently only logs you in and unlocks a domain and gives you the auth-id (transfer key) of a domain.</description></item></channel></rss>

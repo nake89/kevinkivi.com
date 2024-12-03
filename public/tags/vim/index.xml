@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>vim on kevinkivi.com</title>
-    <link>/tags/vim/</link>
-    <description>Recent content in vim on kevinkivi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 15 Apr 2017 11:10:42 +0000</lastBuildDate><atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installing Vim UltiSnips on Debian 7 Wheezy</title>
-      <link>/posts/ultisnips-debian-wheezy/</link>
-      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
-      
-      <guid>/posts/ultisnips-debian-wheezy/</guid>
-      <description>I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First uncomment or add the following line to your /etc/apt/sources.list. This is because the version of Vim in the default repository is too old.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vim on kevinkivi.com</title><link>https://kevinkivi.com/tags/vim/</link><description>Recent content in Vim on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Tue, 25 Oct 2022 22:01:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>VIM and PHP</title><link>https://kevinkivi.com/posts/vim-php/</link><pubDate>Tue, 25 Oct 2022 22:01:00 +0200</pubDate><guid>https://kevinkivi.com/posts/vim-php/</guid><description>To make VIM work more like VSCode, you really want to install VIM plugin called CoC. It adds LSP features to VIM and makes it easy to port VSCode extensions to Vim, and it has great, mature ecosystem: https://github.com/neoclide/coc.nvim
+To get PHP language server features, you want to install a PHP language server extension for CoC: https://github.com/marlonfan/coc-phpls
+This extension uses Intelephense in the background and makes it so that you can jump to definitions etc.</description></item><item><title>How to get history to work in vim mode zsh</title><link>https://kevinkivi.com/posts/how-to-get-history-to-work-in-vim-mode-zsh/</link><pubDate>Fri, 12 Aug 2022 20:52:00 +0200</pubDate><guid>https://kevinkivi.com/posts/how-to-get-history-to-work-in-vim-mode-zsh/</guid><description>When enabling vim mode in zsh it will make pressing ctrl+r not show terminal history anymore. It gets rebound to terminal refresh which is not necessary. To renable ctrl+r append this to your .zshrc:
+bindkey &amp;#34;^R&amp;#34; history-incremental-search-backward Now close the terminal and reopen it (or just type . .zshrc) and you are done.</description></item><item><title>How to enable vim mode in zsh</title><link>https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/</link><pubDate>Fri, 12 Aug 2022 20:24:00 +0200</pubDate><guid>https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/</guid><description>Vim mode let&amp;rsquo;s you use vim keys. You start in insert mode and esc let&amp;rsquo;s you go into normal mode. To enable vim mode append the following snippet to your .zshrc in your home directory.
+# Enable vim mode. bindkey -v Now close the terminal and reopen it (or just type . .zshrc) and you are done.</description></item><item><title>Installing Vim UltiSnips on Debian 7 Wheezy</title><link>https://kevinkivi.com/posts/ultisnips-debian-wheezy/</link><pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate><guid>https://kevinkivi.com/posts/ultisnips-debian-wheezy/</guid><description>I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First uncomment or add the following line to your /etc/apt/sources.list. This is because the version of Vim in the default repository is too old.</description></item></channel></rss>

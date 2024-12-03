@@ -1,54 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Code on kevinkivi.com</title>
-    <link>/tags/code/</link>
-    <description>Recent content in Code on kevinkivi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 May 2017 18:19:52 +0000</lastBuildDate><atom:link href="/tags/code/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PHP: Namecheap.com API Class</title>
-      <link>/posts/php-namecheap-com-api-class/</link>
-      <pubDate>Tue, 16 May 2017 18:19:52 +0000</pubDate>
-      
-      <guid>/posts/php-namecheap-com-api-class/</guid>
-      <description>I built a simple to use class in PHP for the namecheap.com API. It supports all of Namecheap&amp;rsquo;s API methods. I released the code on GitHub. Example of usage:
-&amp;lt;?php require &amp;#39;namecheap.class.php&amp;#39;; $username = &amp;#39;YOUR USERNAME&amp;#39;; $apiKey = &amp;#39;YOUR API KEY&amp;#39;; $clientIp = &amp;#39;IP WHERE THIS YOUR SCRIPT IS HOSTED&amp;#39;; $namecheap = new Namecheap ($username, $apiKey, $clientIp) ; $data\[&amp;#34;Command&amp;#34;\] = &amp;#34;namecheap.ssl.getList&amp;#34;; $returned = $namecheap-&amp;gt;request($data); print\_r($returned) ?&amp;gt;GitHub release:https://github.com/nake89/namecheap</description>
-    </item>
-    
-    <item>
-      <title>Reverse of hostname&#39;s IP</title>
-      <link>/posts/reverse-hostname-ip/</link>
-      <pubDate>Sun, 23 Apr 2017 13:06:00 +0000</pubDate>
-      
-      <guid>/posts/reverse-hostname-ip/</guid>
-      <description>Are you tired of typing host domain.tld and then typing host 123.123.123.123 just to be able to get the reverse of the ip of the hostname you&amp;rsquo;re interested in. I know I am. Here is my node.js commandline application as a solution for that problem. This software requires node.js to run, which you can download here: https://nodejs.org/en/download/
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Code on kevinkivi.com</title><link>https://kevinkivi.com/tags/code/</link><description>Recent content in Code on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Tue, 16 May 2017 18:19:52 +0000</lastBuildDate><atom:link href="https://kevinkivi.com/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>PHP: Namecheap.com API Class</title><link>https://kevinkivi.com/posts/php-namecheap-com-api-class/</link><pubDate>Tue, 16 May 2017 18:19:52 +0000</pubDate><guid>https://kevinkivi.com/posts/php-namecheap-com-api-class/</guid><description>I built a simple to use class in PHP for the namecheap.com API. It supports all of Namecheap&amp;rsquo;s API methods. I released the code on GitHub. Example of usage:
+&amp;lt;?php require &amp;#39;namecheap.class.php&amp;#39;; $username = &amp;#39;YOUR USERNAME&amp;#39;; $apiKey = &amp;#39;YOUR API KEY&amp;#39;; $clientIp = &amp;#39;IP WHERE THIS YOUR SCRIPT IS HOSTED&amp;#39;; $namecheap = new Namecheap ($username, $apiKey, $clientIp) ; $data\[&amp;#34;Command&amp;#34;\] = &amp;#34;namecheap.ssl.getList&amp;#34;; $returned = $namecheap-&amp;gt;request($data); print\_r($returned) ?&amp;gt; GitHub release: https://github.com/nake89/namecheap</description></item><item><title>Reverse of hostname's IP</title><link>https://kevinkivi.com/posts/reverse-hostname-ip/</link><pubDate>Sun, 23 Apr 2017 13:06:00 +0000</pubDate><guid>https://kevinkivi.com/posts/reverse-hostname-ip/</guid><description>Are you tired of typing host domain.tld and then typing host 123.123.123.123 just to be able to get the reverse of the ip of the hostname you&amp;rsquo;re interested in. I know I am. Here is my node.js commandline application as a solution for that problem. This software requires node.js to run, which you can download here: https://nodejs.org/en/download/
 Installation npm i fore-cli -g
 Usage fore domain.tld
 Example
-# fore kevinkivi.com hel1-77-86-179-68.ext.nebulacloud.fi GitHub repository: https://github.</description>
-    </item>
-    
-    <item>
-      <title>How to pass command-line arguments in node.js</title>
-      <link>/posts/pass-command-line-arguments-node-js/</link>
-      <pubDate>Sat, 15 Apr 2017 16:43:25 +0000</pubDate>
-      
-      <guid>/posts/pass-command-line-arguments-node-js/</guid>
-      <description>So you want to pass information to your program. This can be quite easily achieved. The arguments are contained in process.argv. arg.js
+# fore kevinkivi.com hel1-77-86-179-68.ext.nebulacloud.fi GitHub repository: https://github.</description></item><item><title>How to pass command-line arguments in node.js</title><link>https://kevinkivi.com/posts/pass-command-line-arguments-node-js/</link><pubDate>Sat, 15 Apr 2017 16:43:25 +0000</pubDate><guid>https://kevinkivi.com/posts/pass-command-line-arguments-node-js/</guid><description>So you want to pass information to your program. This can be quite easily achieved. The arguments are contained in process.argv. arg.js
 console.log(process.argv[0]); console.log(process.argv[1]); console.log(process.argv[2]); console.log(process.argv[3]); console.log(process.argv[4]); Testing the code:
-nake89@debian:~/nodeprojects/soacomp$ node arg.js what is this /home/nake89/.nvm/versions/node/v6.10.2/bin/node /home/nake89/nodeprojects/soacomp/arg.js what is this So the first line is the location of your node executable and the second one is the location of the script. These are largely unnecessary which is why the following script is so popular.</description>
-    </item>
-    
-    <item>
-      <title>Joker.com automation</title>
-      <link>/posts/joker-com-automation/</link>
-      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
-      
-      <guid>/posts/joker-com-automation/</guid>
-      <description>I&amp;rsquo;ve been working on automation for joker.com, so that I can unlock domains and order the auth-id (epp-key, transfer key) faster. It uses the joker.com API. I wrote it in node.js. It is still in development and I will add more functionality to this application. Here is the npm page: https://www.npmjs.com/package/joker-auto Github: https://github.com/nake89/joker-nodejs
-Joker Automation This is a node.js script for automating Joker.com services. Still in early development. Currently only logs you in and unlocks a domain and gives you the auth-id (transfer key) of a domain.</description>
-    </item>
-    
-  </channel>
-</rss>
+nake89@debian:~/nodeprojects/soacomp$ node arg.js what is this /home/nake89/.nvm/versions/node/v6.10.2/bin/node /home/nake89/nodeprojects/soacomp/arg.js what is this So the first line is the location of your node executable and the second one is the location of the script. These are largely unnecessary which is why the following script is so popular.</description></item><item><title>Joker.com automation</title><link>https://kevinkivi.com/posts/joker-com-automation/</link><pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate><guid>https://kevinkivi.com/posts/joker-com-automation/</guid><description>I&amp;rsquo;ve been working on automation for joker.com, so that I can unlock domains and order the auth-id (epp-key, transfer key) faster. It uses the joker.com API. I wrote it in node.js. It is still in development and I will add more functionality to this application. Here is the npm page: https://www.npmjs.com/package/joker-auto Github: https://github.com/nake89/joker-nodejs
+Joker Automation This is a node.js script for automating Joker.com services. Still in early development. Currently only logs you in and unlocks a domain and gives you the auth-id (transfer key) of a domain.</description></item></channel></rss>

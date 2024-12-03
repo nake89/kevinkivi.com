@@ -1,6 +1,7 @@
 title: "kevinkivi.com"
 theme: "PaperMod"
 googleAnalytics: "G-7VJSK74NCS"
+baseURL: https://kevinkivi.com/
 
 params:
     defaultTheme: dark

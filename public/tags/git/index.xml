@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Git on kevinkivi.com</title>
-    <link>/tags/git/</link>
-    <description>Recent content in Git on kevinkivi.com</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 27 Sep 2018 19:37:13 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GIT: Get remote repository URL</title>
-      <link>/posts/git-get-remote-repository-url/</link>
-      <pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate>
-      
-      <guid>/posts/git-get-remote-repository-url/</guid>
-      <description>So you need the remote repository URL. Maybe because you are trying to git add remote. You can type the below text to get the full info (needs to be done inside the folder you are working in):
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Git on kevinkivi.com</title><link>https://kevinkivi.com/tags/git/</link><description>Recent content in Git on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Thu, 27 Sep 2018 19:37:13 +0000</lastBuildDate><atom:link href="https://kevinkivi.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>GIT: Get remote repository URL</title><link>https://kevinkivi.com/posts/git-get-remote-repository-url/</link><pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate><guid>https://kevinkivi.com/posts/git-get-remote-repository-url/</guid><description>So you need the remote repository URL. Maybe because you are trying to git add remote. You can type the below text to get the full info (needs to be done inside the folder you are working in):
 git remote show origin OR
 git config --get remote.origin.url After you know this, if you want you can create a new remote branch
-git add remote &amp;lt;name you want for your new branch&amp;gt; &amp;lt;URL you just got&amp;gt; git add remote newbranch git@hostedgit.</description>
-    </item>
-    
-  </channel>
-</rss>
+git add remote &amp;lt;name you want for your new branch&amp;gt; &amp;lt;URL you just got&amp;gt; git add remote newbranch git@hostedgit.</description></item></channel></rss>
