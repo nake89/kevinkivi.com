@@ -1,16 +1,253 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Linux | kevinkivi.com</title>
-<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://kevinkivi.com/tags/linux/><link crossorigin=anonymous href=/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as=style><link rel=icon href=https://kevinkivi.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://kevinkivi.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://kevinkivi.com/favicon-32x32.png><link rel=apple-touch-icon href=https://kevinkivi.com/apple-touch-icon.png><link rel=mask-icon href=https://kevinkivi.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://kevinkivi.com/tags/linux/index.xml><link rel=alternate hreflang=en href=https://kevinkivi.com/tags/linux/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-7VJSK74NCS"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-7VJSK74NCS",{anonymize_ip:!1})}</script><meta property="og:url" content="https://kevinkivi.com/tags/linux/"><meta property="og:site_name" content="kevinkivi.com"><meta property="og:title" content="Linux"><meta property="og:locale" content="en"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Linux"><meta name=twitter:description content></head><body class="list dark" id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://kevinkivi.com/ accesskey=h title="kevinkivi.com (Alt + H)">kevinkivi.com</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>Linux</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Say goodbye to grep</h2></header><div class=entry-content><p>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Linux | kevinkivi.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tags/linux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/linux/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="kevinkivi.com (Alt + H)">kevinkivi.com</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Linux
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Say goodbye to grep
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
 Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
 Why not just grep? Hella fast. Like really really fast. It is beautifully optimized C. It ignores files from .gitignore Instead of doing this with grep:
-grep -R --exclude-dir=node_modules 'foobar' /path/to/your/code You can just do (if you have node_modules in your ....</p></div><footer class=entry-footer><span title='2021-07-25 10:11:00 +0200 +0200'>July 25, 2021</span></footer><a class=entry-link aria-label="post link to Say goodbye to grep" href=https://kevinkivi.com/posts/the-silver-searcher/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Autostart any GUI app in Manjaro</h2></header><div class=entry-content><p>In this example I will autostart the GUI package manager of Manjaro.
+grep -R --exclude-dir=node_modules &#39;foobar&#39; /path/to/your/code You can just do (if you have node_modules in your .gitignore):
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-07-25 10:11:00 +0200 +0200'>July 25, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Say goodbye to grep" href="http://localhost:1313/posts/the-silver-searcher/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Autostart any GUI app in Manjaro
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In this example I will autostart the GUI package manager of Manjaro.
 Create a file e.g. ~/.config/autostart/pamac-manager.desktop In that file put:
 [Desktop Entry] Terminal=false Name=pamac-manager Type=Application Exec=/usr/bin/pamac-manager Icon=pamac-manager Comment=Package Manager In the Exec line put the path to your executable file. The rest you can probably guess.
-Source: https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html</p></div><footer class=entry-footer><span title='2021-04-30 19:33:00 +0200 +0200'>April 30, 2021</span></footer><a class=entry-link aria-label="post link to Autostart any GUI app in Manjaro" href=https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Linux & OSX: Get file encoding</h2></header><div class=entry-content><p>Sometime you need to know what’s your file encoding? Is it UTF-8, ISO 8859-1, ASCII or Windows 1252? You can find this out by using the file Unix command. Linux: file -i &lt;filename> Mac OSX: file -I &lt;filename> Example usage:
-username@server ~$ file -i somefile.php somefile.php: text/x-php; charset=us-ascii username@server ~$ file -i myutf8file.txt myutf8file.txt: text/plain; charset=utf-8 username@server ~$ file -i username.tar.bz2 username.tar.bz2: application/x-bzip2; charset=binary username@server ~$ If you want only the encoding....</p></div><footer class=entry-footer><span title='2018-09-28 14:37:01 +0000 +0000'>September 28, 2018</span></footer><a class=entry-link aria-label="post link to Linux & OSX: Get file encoding" href=https://kevinkivi.com/posts/linux-osx-get-file-encoding/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>cPanel: Listing all domains</h2></header><div class=entry-content><p>I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.
-Usage: lsdom [OPTION] [INPUT] Example: lsdom [cPanel username] Lists domains for certain user by username or domain or for all users Options: -d [domain] Displays all domains of the user of the input domain. -a, --all Lists all domains. -v, --version Displays version. -h, --help This help page....</p></div><footer class=entry-footer><span title='2018-02-11 19:46:38 +0000 +0000'>February 11, 2018</span></footer><a class=entry-link aria-label="post link to cPanel: Listing all domains" href=https://kevinkivi.com/posts/cpanel-listing-all-domains/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>cPanel: Listing all non-self-signed certificates</h2></header><div class=entry-content><p>I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.
-Usage: lrcert [OPTION] [INPUT] Example: lrcert [cPanel username] Options: -d [domain] Displays all certificates of the owner of the domain. -a, --all Lists all certificates of all cPanel users -v, --version Displays version. -h, --help This help page. GitHub: https://github.com/nake89/lrcert/</p></div><footer class=entry-footer><span title='2018-02-10 13:39:23 +0000 +0000'>February 10, 2018</span></footer><a class=entry-link aria-label="post link to cPanel: Listing all non-self-signed certificates" href=https://kevinkivi.com/posts/cpanel-listing-all-non-self-signed-certificates/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Echoing multiline in linux terminal</h2></header><div class=entry-content><p>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
-user@server:~/projects/blog\_content$ echo "This file is" >> multiline.txt user@server:~/projects/blog\_content$ echo "multiline" >> multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2....</p></div><footer class=entry-footer><span title='2018-02-03 18:02:29 +0000 +0000'>February 3, 2018</span></footer><a class=entry-link aria-label="post link to Echoing multiline in linux terminal" href=https://kevinkivi.com/posts/echoing-multiline-in-linux-terminal/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>How to Search Contents of File in Linux</h2></header><div class=entry-content><p>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script....</p></div><footer class=entry-footer><span title='2017-04-15 17:48:48 +0000 +0000'>April 15, 2017</span></footer><a class=entry-link aria-label="post link to How to Search Contents of File in Linux" href=https://kevinkivi.com/posts/search-contents-file-linux/></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://kevinkivi.com/>kevinkivi.com</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+Source: https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-04-30 19:33:00 +0200 +0200'>April 30, 2021</span></footer>
+  <a class="entry-link" aria-label="post link to Autostart any GUI app in Manjaro" href="http://localhost:1313/posts/auto-start-gui-app-in-manjaro/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Linux &amp; OSX: Get file encoding
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sometime you need to know what’s your file encoding? Is it UTF-8, ISO 8859-1, ASCII or Windows 1252? You can find this out by using the file Unix command. Linux: file -i &lt;filename&gt; Mac OSX: file -I &lt;filename&gt; Example usage:
+username@server ~$ file -i somefile.php somefile.php: text/x-php; charset=us-ascii username@server ~$ file -i myutf8file.txt myutf8file.txt: text/plain; charset=utf-8 username@server ~$ file -i username.tar.bz2 username.tar.bz2: application/x-bzip2; charset=binary username@server ~$ If you want only the encoding. You can do file -i filename.txt | sed &#34;s/.*charset=\(.*\)/\1/&#34; E.g.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-09-28 14:37:01 +0000 +0000'>September 28, 2018</span></footer>
+  <a class="entry-link" aria-label="post link to Linux & OSX: Get file encoding" href="http://localhost:1313/posts/linux-osx-get-file-encoding/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">cPanel: Listing all domains
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.
+Usage: lsdom [OPTION] [INPUT] Example: lsdom [cPanel username] Lists domains for certain user by username or domain or for all users Options: -d [domain] Displays all domains of the user of the input domain. -a, --all Lists all domains. -v, --version Displays version. -h, --help This help page. GitHub: https://github.com/nake89/lsdom
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-02-11 19:46:38 +0000 +0000'>February 11, 2018</span></footer>
+  <a class="entry-link" aria-label="post link to cPanel: Listing all domains" href="http://localhost:1313/posts/cpanel-listing-all-domains/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">cPanel: Listing all non-self-signed certificates
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.
+Usage: lrcert [OPTION] [INPUT] Example: lrcert [cPanel username] Options: -d [domain] Displays all certificates of the owner of the domain. -a, --all Lists all certificates of all cPanel users -v, --version Displays version. -h, --help This help page. GitHub: https://github.com/nake89/lrcert/
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-02-10 13:39:23 +0000 +0000'>February 10, 2018</span></footer>
+  <a class="entry-link" aria-label="post link to cPanel: Listing all non-self-signed certificates" href="http://localhost:1313/posts/cpanel-listing-all-non-self-signed-certificates/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Echoing multiline in linux terminal
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
+user@server:~/projects/blog\_content$ echo &#34;This file is&#34; &gt;&gt; multiline.txt user@server:~/projects/blog\_content$ echo &#34;multiline&#34; &gt;&gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2. Heredoc -method You can replace EOF with your choice of characters. It denotes the ending of your input.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-02-03 18:02:29 +0000 +0000'>February 3, 2018</span></footer>
+  <a class="entry-link" aria-label="post link to Echoing multiline in linux terminal" href="http://localhost:1313/posts/echoing-multiline-in-linux-terminal/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Search Contents of File in Linux
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2017-04-15 17:48:48 +0000 +0000'>April 15, 2017</span></footer>
+  <a class="entry-link" aria-label="post link to How to Search Contents of File in Linux" href="http://localhost:1313/posts/search-contents-file-linux/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">kevinkivi.com</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

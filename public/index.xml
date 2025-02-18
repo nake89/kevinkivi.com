@@ -1,37 +1,369 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>kevinkivi.com</title><link>https://kevinkivi.com/</link><description>Recent content on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Wed, 13 Nov 2024 20:22:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Thoughts on Deno</title><link>https://kevinkivi.com/posts/deno/</link><pubDate>Wed, 13 Nov 2024 20:22:00 +0200</pubDate><guid>https://kevinkivi.com/posts/deno/</guid><description>I originally asked chatGPT to write this article. Just to test chatGPT out. I forgot to mention that I wrote it with chatGPT and it was absolutely an embarrasing piece of writing. It looked like a machine wrote it.
-The topic of article is still very interesting. Now maybe more than ever. Because Deno 2.0 has been released. JSR exists. After about two years (?) of using Deno what can I say about it that hasn&amp;rsquo;t been said.</description></item><item><title>VIM and PHP</title><link>https://kevinkivi.com/posts/vim-php/</link><pubDate>Tue, 25 Oct 2022 22:01:00 +0200</pubDate><guid>https://kevinkivi.com/posts/vim-php/</guid><description>To make VIM work more like VSCode, you really want to install VIM plugin called CoC. It adds LSP features to VIM and makes it easy to port VSCode extensions to Vim, and it has great, mature ecosystem: https://github.com/neoclide/coc.nvim
-To get PHP language server features, you want to install a PHP language server extension for CoC: https://github.com/marlonfan/coc-phpls
-This extension uses Intelephense in the background and makes it so that you can jump to definitions etc.</description></item><item><title>Speed Reader App</title><link>https://kevinkivi.com/posts/speed-reader/</link><pubDate>Fri, 16 Sep 2022 13:57:00 +0200</pubDate><guid>https://kevinkivi.com/posts/speed-reader/</guid><description>I have been using this great speed reading webapp called Spreeder. It prints out one word at a time to the middle of the screen. It prints them out at 300WPM by default (raising the average reading speed of 200WPM). It is very effective for short bursts at least. Link to Spreeder: https://www.spreeder.com/app.php?intro=1
-I was wondering if I could dev this in one day (more or less). Here is the result: https://nake89.</description></item><item><title>How to get history to work in vim mode zsh</title><link>https://kevinkivi.com/posts/how-to-get-history-to-work-in-vim-mode-zsh/</link><pubDate>Fri, 12 Aug 2022 20:52:00 +0200</pubDate><guid>https://kevinkivi.com/posts/how-to-get-history-to-work-in-vim-mode-zsh/</guid><description>When enabling vim mode in zsh it will make pressing ctrl+r not show terminal history anymore. It gets rebound to terminal refresh which is not necessary. To renable ctrl+r append this to your .zshrc:
-bindkey &amp;#34;^R&amp;#34; history-incremental-search-backward Now close the terminal and reopen it (or just type . .zshrc) and you are done.</description></item><item><title>How to enable vim mode in zsh</title><link>https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/</link><pubDate>Fri, 12 Aug 2022 20:24:00 +0200</pubDate><guid>https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/</guid><description>Vim mode let&amp;rsquo;s you use vim keys. You start in insert mode and esc let&amp;rsquo;s you go into normal mode. To enable vim mode append the following snippet to your .zshrc in your home directory.
-# Enable vim mode. bindkey -v Now close the terminal and reopen it (or just type . .zshrc) and you are done.</description></item><item><title>WPAIO.one - What Page Am I On?</title><link>https://kevinkivi.com/posts/wpaio/</link><pubDate>Tue, 16 Nov 2021 18:06:00 +0200</pubDate><guid>https://kevinkivi.com/posts/wpaio/</guid><description>I wanted to see if I could create and publish an app (website) in one day. This app had to have some practical value. An app to keep track of the current book I am reading (Tom Clancy&amp;rsquo;s Oath of Office). I do use a bookmark, but it is very thin and I wanted an app where I can enter the page I&amp;rsquo;m currently on. So I created https://wpaio.one</description></item><item><title>Local development is a joke (sometimes)</title><link>https://kevinkivi.com/posts/localdev/</link><pubDate>Fri, 15 Oct 2021 15:50:00 +0200</pubDate><guid>https://kevinkivi.com/posts/localdev/</guid><description>Local development has many benefits. When you can edit something on your local development machine and see the changes immediately (hot-reload), it makes the feedback loop smaller and makes development that much faster. Different toolkits have different ways of trying to solve local dev. Serverless Offline is a plugin for the Serverless Framework simulates AWS Lambda and other serverless providers to give a working offline version of that serverless app you are trying to create.</description></item><item><title>Passwords in Email</title><link>https://kevinkivi.com/posts/passwords-in-email/</link><pubDate>Tue, 17 Aug 2021 17:28:00 +0200</pubDate><guid>https://kevinkivi.com/posts/passwords-in-email/</guid><description>It happened again. I created an account to a service (a domain registrar) and their welcome email contained the password I just gave them. You might think that that is fine, because maybe they didn&amp;rsquo;t store that password plain text in their DB. Maybe they hashed it. If you are confused about what hashing means, then read this auth0 article.
-Hashing in short: Normally passwords are stored in the database in a cryptographically secure manner, called a hash.</description></item><item><title>Add GSI to existing DynamodDB table (nodejs, aws-sdk)</title><link>https://kevinkivi.com/posts/add-gsi-to-existing-table/</link><pubDate>Thu, 05 Aug 2021 19:11:00 +0200</pubDate><guid>https://kevinkivi.com/posts/add-gsi-to-existing-table/</guid><description>If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
-How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
-Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
-Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
-That&amp;rsquo;s all fine until you need to add another GSI. You can&amp;rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.</description></item><item><title>Say goodbye to grep</title><link>https://kevinkivi.com/posts/the-silver-searcher/</link><pubDate>Sun, 25 Jul 2021 10:11:00 +0200</pubDate><guid>https://kevinkivi.com/posts/the-silver-searcher/</guid><description>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
-Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
-Why not just grep? Hella fast. Like really really fast. It is beautifully optimized C. It ignores files from .gitignore Instead of doing this with grep:
-grep -R --exclude-dir=node_modules &amp;#39;foobar&amp;#39; /path/to/your/code You can just do (if you have node_modules in your .</description></item><item><title>Autostart any GUI app in Manjaro</title><link>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</link><pubDate>Fri, 30 Apr 2021 19:33:00 +0200</pubDate><guid>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</guid><description>In this example I will autostart the GUI package manager of Manjaro.
-Create a file e.g. ~/.config/autostart/pamac-manager.desktop In that file put:
-[Desktop Entry] Terminal=false Name=pamac-manager Type=Application Exec=/usr/bin/pamac-manager Icon=pamac-manager Comment=Package Manager In the Exec line put the path to your executable file. The rest you can probably guess.
-Source: https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html</description></item><item><title>Linux &amp; OSX: Get file encoding</title><link>https://kevinkivi.com/posts/linux-osx-get-file-encoding/</link><pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate><guid>https://kevinkivi.com/posts/linux-osx-get-file-encoding/</guid><description>Sometime you need to know what&amp;rsquo;s your file encoding? Is it UTF-8, ISO 8859-1, ASCII or Windows 1252? You can find this out by using the file Unix command. Linux: file -i &amp;lt;filename&amp;gt; Mac OSX: file -I &amp;lt;filename&amp;gt; Example usage:
-username@server ~$ file -i somefile.php somefile.php: text/x-php; charset=us-ascii username@server ~$ file -i myutf8file.txt myutf8file.txt: text/plain; charset=utf-8 username@server ~$ file -i username.tar.bz2 username.tar.bz2: application/x-bzip2; charset=binary username@server ~$ If you want only the encoding.</description></item><item><title>GIT: Get remote repository URL</title><link>https://kevinkivi.com/posts/git-get-remote-repository-url/</link><pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate><guid>https://kevinkivi.com/posts/git-get-remote-repository-url/</guid><description>So you need the remote repository URL. Maybe because you are trying to git add remote. You can type the below text to get the full info (needs to be done inside the folder you are working in):
-git remote show origin OR
-git config --get remote.origin.url After you know this, if you want you can create a new remote branch
-git add remote &amp;lt;name you want for your new branch&amp;gt; &amp;lt;URL you just got&amp;gt; git add remote newbranch git@hostedgit.</description></item><item><title>PHP: Curl vs file_get_contents benchmark</title><link>https://kevinkivi.com/posts/php-curl-vs-file_get_contents-benchmark/</link><pubDate>Mon, 13 Aug 2018 17:55:17 +0000</pubDate><guid>https://kevinkivi.com/posts/php-curl-vs-file_get_contents-benchmark/</guid><description>I benchmarked curl vs file_get_contents in getting headers only and returning the HTTP Status Code. Here are the results:
-kevinkivi@server:~/my/secret/directory$ php curlvsfgctest.php Testing curl speed Domain: http://google.com Status: 301 Domain: http://yahoo.com Status: 301 Domain: http://nytimes.com Status: 301 Domain: http://theguardian.com Status: 301 Domain: http://wikipedia.org Status: 301 Curl speed was 0.35739207267761 Testing file\_get\_contents speed Domain: http://google.com Status: HTTP/1.0 301 Moved Permanently Domain: http://yahoo.com Status: HTTP/1.0 301 Moved Permanently Domain: http://nytimes.com Status: HTTP/1.1 301 Moved Permanently Domain: http://theguardian.</description></item><item><title>Javascript: Cronometer ratio changer</title><link>https://kevinkivi.com/posts/cronometer-ratio-changer/</link><pubDate>Sat, 21 Jul 2018 09:51:40 +0000</pubDate><guid>https://kevinkivi.com/posts/cronometer-ratio-changer/</guid><description>I created a script (with the help of my wife) which can change the ratio of foods. E.g.To make new food in Cronometer such as date paste, export &amp;ldquo;Dates&amp;rdquo; JSON from Cronometer. Then import the file. If the date paste is 15% water and 85% dates, then make the multiplier 0.85 and name it as you want. View at JSFiddle: https://jsfiddle.net/nake89/2k78jxpt/</description></item><item><title>cPanel: Listing all domains</title><link>https://kevinkivi.com/posts/cpanel-listing-all-domains/</link><pubDate>Sun, 11 Feb 2018 19:46:38 +0000</pubDate><guid>https://kevinkivi.com/posts/cpanel-listing-all-domains/</guid><description>I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.
-Usage: lsdom [OPTION] [INPUT] Example: lsdom [cPanel username] Lists domains for certain user by username or domain or for all users Options: -d [domain] Displays all domains of the user of the input domain. -a, --all Lists all domains. -v, --version Displays version. -h, --help This help page.</description></item><item><title>Ubuntu: Loading Photos from Nikon D3300 DSLR Camera</title><link>https://kevinkivi.com/posts/ubuntu-loading-photos-from-nikon-d3300-dslr-camera/</link><pubDate>Sat, 10 Feb 2018 13:56:02 +0000</pubDate><guid>https://kevinkivi.com/posts/ubuntu-loading-photos-from-nikon-d3300-dslr-camera/</guid><description>I had some trouble loading photos from my Nikon D3300 camera. I had the USB cable, which came with and connected my PC to it. The camera was on. I use Xubuntu. My file manager is Thunar. The camera would appear in the file manager. Whenever I would try to browse the files in the camera, Thunar would freeze. gvfsd-ghoto2 would use up a huge chunk of the CPU. I would then have to close Thunar and try again.</description></item><item><title>cPanel: Listing all non-self-signed certificates</title><link>https://kevinkivi.com/posts/cpanel-listing-all-non-self-signed-certificates/</link><pubDate>Sat, 10 Feb 2018 13:39:23 +0000</pubDate><guid>https://kevinkivi.com/posts/cpanel-listing-all-non-self-signed-certificates/</guid><description>I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.
-Usage: lrcert [OPTION] [INPUT] Example: lrcert [cPanel username] Options: -d [domain] Displays all certificates of the owner of the domain. -a, --all Lists all certificates of all cPanel users -v, --version Displays version. -h, --help This help page. GitHub: https://github.com/nake89/lrcert/</description></item><item><title>Echoing multiline in linux terminal</title><link>https://kevinkivi.com/posts/echoing-multiline-in-linux-terminal/</link><pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate><guid>https://kevinkivi.com/posts/echoing-multiline-in-linux-terminal/</guid><description>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
-user@server:~/projects/blog\_content$ echo &amp;#34;This file is&amp;#34; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ echo &amp;#34;multiline&amp;#34; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2.</description></item><item><title>PHP: Namecheap.com API Class</title><link>https://kevinkivi.com/posts/php-namecheap-com-api-class/</link><pubDate>Tue, 16 May 2017 18:19:52 +0000</pubDate><guid>https://kevinkivi.com/posts/php-namecheap-com-api-class/</guid><description>I built a simple to use class in PHP for the namecheap.com API. It supports all of Namecheap&amp;rsquo;s API methods. I released the code on GitHub. Example of usage:
-&amp;lt;?php require &amp;#39;namecheap.class.php&amp;#39;; $username = &amp;#39;YOUR USERNAME&amp;#39;; $apiKey = &amp;#39;YOUR API KEY&amp;#39;; $clientIp = &amp;#39;IP WHERE THIS YOUR SCRIPT IS HOSTED&amp;#39;; $namecheap = new Namecheap ($username, $apiKey, $clientIp) ; $data\[&amp;#34;Command&amp;#34;\] = &amp;#34;namecheap.ssl.getList&amp;#34;; $returned = $namecheap-&amp;gt;request($data); print\_r($returned) ?&amp;gt; GitHub release: https://github.com/nake89/namecheap</description></item><item><title>End Bash Script Loop</title><link>https://kevinkivi.com/posts/end-bash-script-loop/</link><pubDate>Wed, 03 May 2017 16:24:51 +0000</pubDate><guid>https://kevinkivi.com/posts/end-bash-script-loop/</guid><description>Sometimes when bash scripting you might want the ability to cancel your script&amp;rsquo;s loop with CTRL-C. Below is an exampl simple script which loops through a file of domains separated by line break and it digs the A record (IP address) of the domain. Read further to learn how to force quit this script.
-#!/bin/bash while read p; do dig $p A +short done &amp;lt;listofdomains.txt If your list of domains is large your and you want to quit this script, you cant.</description></item><item><title>Reverse of hostname's IP</title><link>https://kevinkivi.com/posts/reverse-hostname-ip/</link><pubDate>Sun, 23 Apr 2017 13:06:00 +0000</pubDate><guid>https://kevinkivi.com/posts/reverse-hostname-ip/</guid><description>Are you tired of typing host domain.tld and then typing host 123.123.123.123 just to be able to get the reverse of the ip of the hostname you&amp;rsquo;re interested in. I know I am. Here is my node.js commandline application as a solution for that problem. This software requires node.js to run, which you can download here: https://nodejs.org/en/download/
-Installation npm i fore-cli -g
-Usage fore domain.tld
-Example
-# fore kevinkivi.com hel1-77-86-179-68.ext.nebulacloud.fi GitHub repository: https://github.</description></item><item><title>Fix Certificate error with wget</title><link>https://kevinkivi.com/posts/certificate-error-with-wget/</link><pubDate>Sat, 22 Apr 2017 21:55:18 +0000</pubDate><guid>https://kevinkivi.com/posts/certificate-error-with-wget/</guid><description>So, you are unable to download from https sources with wget. Instead you get the following error.
-ERROR: The certificate of \`www.google.com&amp;#39; is not trusted. ERROR: The certificate of \`www.google.com&amp;#39; hasn&amp;#39;t got a known issuer. No problemo. This error is most likely occurring for missing root certificates. Simply install the ca-certificates package:
-sudo apt-get install ca-certificates This should work on Ubuntu and Debian derivatives.</description></item><item><title>How to Search Contents of File in Linux</title><link>https://kevinkivi.com/posts/search-contents-file-linux/</link><pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate><guid>https://kevinkivi.com/posts/search-contents-file-linux/</guid><description>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.</description></item><item><title>How to pass command-line arguments in node.js</title><link>https://kevinkivi.com/posts/pass-command-line-arguments-node-js/</link><pubDate>Sat, 15 Apr 2017 16:43:25 +0000</pubDate><guid>https://kevinkivi.com/posts/pass-command-line-arguments-node-js/</guid><description>So you want to pass information to your program. This can be quite easily achieved. The arguments are contained in process.argv. arg.js
-console.log(process.argv[0]); console.log(process.argv[1]); console.log(process.argv[2]); console.log(process.argv[3]); console.log(process.argv[4]); Testing the code:
-nake89@debian:~/nodeprojects/soacomp$ node arg.js what is this /home/nake89/.nvm/versions/node/v6.10.2/bin/node /home/nake89/nodeprojects/soacomp/arg.js what is this So the first line is the location of your node executable and the second one is the location of the script. These are largely unnecessary which is why the following script is so popular.</description></item><item><title>Installing Vim UltiSnips on Debian 7 Wheezy</title><link>https://kevinkivi.com/posts/ultisnips-debian-wheezy/</link><pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate><guid>https://kevinkivi.com/posts/ultisnips-debian-wheezy/</guid><description>I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First uncomment or add the following line to your /etc/apt/sources.list. This is because the version of Vim in the default repository is too old.</description></item><item><title>Joker.com automation</title><link>https://kevinkivi.com/posts/joker-com-automation/</link><pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate><guid>https://kevinkivi.com/posts/joker-com-automation/</guid><description>I&amp;rsquo;ve been working on automation for joker.com, so that I can unlock domains and order the auth-id (epp-key, transfer key) faster. It uses the joker.com API. I wrote it in node.js. It is still in development and I will add more functionality to this application. Here is the npm page: https://www.npmjs.com/package/joker-auto Github: https://github.com/nake89/joker-nodejs
-Joker Automation This is a node.js script for automating Joker.com services. Still in early development. Currently only logs you in and unlocks a domain and gives you the auth-id (transfer key) of a domain.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>kevinkivi.com</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Feb 2025 13:50:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Damerau-Levenshtein in the browser or: How I almost lost my mind!</title>
+      <link>http://localhost:1313/posts/real-damerau-levenshtein/</link>
+      <pubDate>Tue, 18 Feb 2025 13:50:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/real-damerau-levenshtein/</guid>
+      <description>&lt;p&gt;Call me lazy, but when I&amp;rsquo;m prototyping something. I want to just be able to &lt;code&gt;&amp;lt;script src=&amp;quot;&lt;/code&gt; a library quickly. I don&amp;rsquo;t want to &lt;code&gt;npm&lt;/code&gt;, &lt;code&gt;webpack&lt;/code&gt; or any such nonsense, if I&amp;rsquo;m just quickly winging it. Now most of the time it&amp;rsquo;s wonderful, I can just find a url from jsdelivr or some other CDN that has been minified and ready to be sourced. But sometimes you can&amp;rsquo;t. This is one of those times.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 18 Feb 2025 13:32:09 +0200</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;I am a 35 year old software developer, husband and father of three from Helsinki, Finland. I speak fluent Finnish and English. I currently work in Telia (the largest TeleCom of the Nordics) in the Broadband Data Mediation team as a senior software engineer. My current passion is Deno. In my free time I work on open source software.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thoughts on Deno</title>
+      <link>http://localhost:1313/posts/deno/</link>
+      <pubDate>Wed, 13 Nov 2024 20:22:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/deno/</guid>
+      <description>&lt;p&gt;I originally asked chatGPT to write this article. Just to test chatGPT out.
+I forgot to mention that I wrote it with chatGPT and it was absolutely an
+embarrasing piece of writing. It looked like a machine wrote it.&lt;/p&gt;
+&lt;p&gt;The topic of article is still very interesting. Now maybe more than ever.
+Because Deno 2.0 has been released. JSR exists. After about two years (?)
+of using Deno what can I say about it that hasn&amp;rsquo;t been said. Nothing.
+But I want to give my input.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VIM and PHP</title>
+      <link>http://localhost:1313/posts/vim-php/</link>
+      <pubDate>Tue, 25 Oct 2022 22:01:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/vim-php/</guid>
+      <description>&lt;p&gt;To make VIM work more like VSCode, you really want to install VIM plugin called CoC. It adds LSP features to VIM and makes it easy to port VSCode extensions to Vim, and it has great, mature ecosystem: &lt;a href=&#34;https://github.com/neoclide/coc.nvim&#34;&gt;https://github.com/neoclide/coc.nvim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To get PHP language server features, you want to install a PHP language server extension for CoC: &lt;a href=&#34;https://github.com/marlonfan/coc-phpls&#34;&gt;https://github.com/marlonfan/coc-phpls&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This extension uses Intelephense in the background and makes it so that you can jump to definitions etc. But some of the features that you are used to have with language servers are missing unless you get premium licence for Intelephense. Like renaming variables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speed Reader App</title>
+      <link>http://localhost:1313/posts/speed-reader/</link>
+      <pubDate>Fri, 16 Sep 2022 13:57:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/speed-reader/</guid>
+      <description>&lt;p&gt;I have been using this great speed reading webapp called Spreeder. It prints out one word at a time to the middle of the screen. It prints them out at 300WPM by default (raising the average reading speed of 200WPM). It is very effective for short bursts at least. Link to Spreeder: &lt;a href=&#34;https://www.spreeder.com/app.php?intro=1&#34;&gt;https://www.spreeder.com/app.php?intro=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I was wondering if I could dev this in one day (more or less). Here is the result: &lt;a href=&#34;https://nake89.github.io/speed-reader/&#34;&gt;https://nake89.github.io/speed-reader/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to get history to work in vim mode zsh</title>
+      <link>http://localhost:1313/posts/how-to-get-history-to-work-in-vim-mode-zsh/</link>
+      <pubDate>Fri, 12 Aug 2022 20:52:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/how-to-get-history-to-work-in-vim-mode-zsh/</guid>
+      <description>&lt;p&gt;When &lt;a href=&#34;https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/&#34;&gt;enabling vim mode in zsh&lt;/a&gt; it will make pressing &lt;code&gt;ctrl+r&lt;/code&gt; not show terminal history anymore. It gets rebound to terminal refresh which is not necessary. To renable &lt;code&gt;ctrl+r&lt;/code&gt; append this to your &lt;code&gt;.zshrc&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bindkey &amp;#34;^R&amp;#34; history-incremental-search-backward
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now close the terminal and reopen it (or just type &lt;code&gt;. .zshrc&lt;/code&gt;) and you are done.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to enable vim mode in zsh</title>
+      <link>http://localhost:1313/posts/how-to-enable-vim-mode-in-zsh/</link>
+      <pubDate>Fri, 12 Aug 2022 20:24:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/how-to-enable-vim-mode-in-zsh/</guid>
+      <description>&lt;p&gt;Vim mode let&amp;rsquo;s you use vim keys. You start in insert mode and esc let&amp;rsquo;s you go into normal mode. To enable vim mode append the following snippet to your &lt;code&gt;.zshrc&lt;/code&gt; in your home directory.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Enable vim mode.
+bindkey -v
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now close the terminal and reopen it (or just type &lt;code&gt;. .zshrc&lt;/code&gt;) and you are done.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WPAIO.one - What Page Am I On?</title>
+      <link>http://localhost:1313/posts/wpaio/</link>
+      <pubDate>Tue, 16 Nov 2021 18:06:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/wpaio/</guid>
+      <description>&lt;p&gt;I wanted to see if I could create and publish an app (website) in one day. This app had to have some practical value. An app to keep track of the current book I am reading (Tom Clancy&amp;rsquo;s Oath of Office). I do use a bookmark, but it is very thin and I wanted an app where I can enter the page I&amp;rsquo;m currently on. So I created &lt;a href=&#34;https://wpaio.one&#34;&gt;https://wpaio.one&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Local development is a joke (sometimes)</title>
+      <link>http://localhost:1313/posts/localdev/</link>
+      <pubDate>Fri, 15 Oct 2021 15:50:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/localdev/</guid>
+      <description>&lt;p&gt;Local development has many benefits. When you can edit something on your local development machine and see the changes immediately (hot-reload), it makes the feedback loop smaller and makes development that much faster. Different toolkits have different ways of trying to solve local dev. Serverless Offline is a plugin for the Serverless Framework simulates AWS Lambda and other serverless providers to give a working offline version of that serverless app you are trying to create. So instead of calling e.g. &lt;code&gt;https://12312321.execute-api.eu-north-1.amazonaws.com/dev&lt;/code&gt; you would call &lt;code&gt;http://localhost:3000/&lt;/code&gt;. There is LocalStack which will emulate the whole AWS ecosystem. And most front-end frameworks have some sort of hot-reload enabled toolkit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Passwords in Email</title>
+      <link>http://localhost:1313/posts/passwords-in-email/</link>
+      <pubDate>Tue, 17 Aug 2021 17:28:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/passwords-in-email/</guid>
+      <description>&lt;p&gt;It happened again. I created an account to a service (a domain registrar) and their welcome email contained the password I just gave them. You might think that that is fine, because &lt;em&gt;maybe&lt;/em&gt; they didn&amp;rsquo;t store that password plain text in their DB. Maybe they hashed it. If you are confused about what &lt;em&gt;hashing&lt;/em&gt; means, then read this &lt;a href=&#34;https://auth0.com/blog/hashing-passwords-one-way-road-to-security/&#34;&gt;auth0 article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hashing in short: Normally passwords are stored in the database in a cryptographically secure manner, called a hash. This hash cannot be reversed to the password. Unless bruteforced, the stronger the password, the longer it will take, potentially up to tens/hundreds of thousands years (hashing algorithm and salting also can affect the difficulty in bruteforcing). This means that if somebody hacks the database, the attacker wont get all the customers&amp;rsquo; passwords.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Add GSI to existing DynamodDB table (nodejs, aws-sdk)</title>
+      <link>http://localhost:1313/posts/add-gsi-to-existing-table/</link>
+      <pubDate>Thu, 05 Aug 2021 19:11:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/add-gsi-to-existing-table/</guid>
+      <description>&lt;p&gt;If you are using the Serverless Framework, you can create DynamodDB and add &lt;strong&gt;one&lt;/strong&gt; GSI (Global Secondary Index) with cloudformation syntax.&lt;/p&gt;
+&lt;p&gt;How to add table: &lt;a href=&#34;https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration&#34;&gt;https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is the syntax to add GSI: &lt;a href=&#34;https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/&#34;&gt;https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Official docs related to GSI cloudformation syntax: &lt;a href=&#34;https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html&#34;&gt;https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s all fine until you need to add another GSI. You can&amp;rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: &lt;a href=&#34;https://aws.amazon.com/tools/&#34;&gt;https://aws.amazon.com/tools/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Say goodbye to grep</title>
+      <link>http://localhost:1313/posts/the-silver-searcher/</link>
+      <pubDate>Sun, 25 Jul 2021 10:11:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/the-silver-searcher/</guid>
+      <description>&lt;p&gt;&lt;code&gt;ack&lt;/code&gt; is a famous code search tool to replace &lt;code&gt;grep&lt;/code&gt; (in a lot of use cases): &lt;a href=&#34;https://beyondgrep.com/why-ack/&#34;&gt;https://beyondgrep.com/why-ack/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now there is something even better. There is &lt;code&gt;ag&lt;/code&gt; aka The Silver Searcher: &lt;a href=&#34;https://github.com/ggreer/the_silver_searcher&#34;&gt;ggreer/the_silver_searcher&lt;/a&gt;
+It is like ack, but faster.&lt;/p&gt;
+&lt;h3 id=&#34;why-not-just-grep&#34;&gt;Why not just grep?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ggreer/the_silver_searcher#whats-so-great-about-ag&#34;&gt;Hella fast.&lt;/a&gt; &lt;a href=&#34;https://geoff.greer.fm/ag/speed/&#34;&gt;Like really&lt;/a&gt; &lt;a href=&#34;https://github.com/ggreer/the_silver_searcher#how-is-it-so-fast&#34;&gt;really fast.&lt;/a&gt; It is beautifully optimized C.&lt;/li&gt;
+&lt;li&gt;It ignores files from &lt;code&gt;.gitignore&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead of doing this with grep:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grep -R --exclude-dir=node_modules &amp;#39;foobar&amp;#39; /path/to/your/code
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can just do (if you have node_modules in your .gitignore):&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Autostart any GUI app in Manjaro</title>
+      <link>http://localhost:1313/posts/auto-start-gui-app-in-manjaro/</link>
+      <pubDate>Fri, 30 Apr 2021 19:33:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/auto-start-gui-app-in-manjaro/</guid>
+      <description>&lt;p&gt;In this example I will autostart the GUI package manager of Manjaro.&lt;/p&gt;
+&lt;p&gt;Create a file e.g. &lt;code&gt;~/.config/autostart/pamac-manager.desktop&lt;/code&gt;
+In that file put:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Desktop Entry]
+Terminal=false
+Name=pamac-manager
+Type=Application
+Exec=/usr/bin/pamac-manager
+Icon=pamac-manager
+Comment=Package Manager
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the &lt;code&gt;Exec&lt;/code&gt; line put the path to your executable file. The rest you can probably guess.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html&#34;&gt;https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux &amp; OSX: Get file encoding</title>
+      <link>http://localhost:1313/posts/linux-osx-get-file-encoding/</link>
+      <pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate>
+      <guid>http://localhost:1313/posts/linux-osx-get-file-encoding/</guid>
+      <description>&lt;p&gt;Sometime you need to know what&amp;rsquo;s your file encoding? Is it UTF-8, ISO 8859-1, ASCII or Windows 1252? You can find this out by using the &lt;code&gt;file&lt;/code&gt; Unix command. Linux: &lt;code&gt;file -i &amp;lt;filename&amp;gt;&lt;/code&gt; Mac OSX: &lt;code&gt;file -I &amp;lt;filename&amp;gt;&lt;/code&gt; Example usage:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;username@server ~$ file -i somefile.php
+somefile.php: text/x-php; charset=us-ascii
+username@server ~$ file -i myutf8file.txt
+myutf8file.txt: text/plain; charset=utf-8
+username@server ~$ file -i username.tar.bz2
+username.tar.bz2: application/x-bzip2; charset=binary
+username@server ~$
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you want only the encoding. You can do &lt;code&gt;file -i filename.txt | sed &amp;quot;s/.*charset=\(.*\)/\1/&amp;quot;&lt;/code&gt; E.g.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GIT: Get remote repository URL</title>
+      <link>http://localhost:1313/posts/git-get-remote-repository-url/</link>
+      <pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate>
+      <guid>http://localhost:1313/posts/git-get-remote-repository-url/</guid>
+      <description>&lt;p&gt;So you need the remote repository URL. Maybe because you are trying to &lt;code&gt;git add remote&lt;/code&gt;. You can type the below text to get the full info (needs to be done inside the folder you are working in):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git remote show origin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;OR&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --get remote.origin.url
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After you know this, if you want you can create a new remote branch&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git add remote &amp;lt;name you want for your new branch&amp;gt; &amp;lt;URL you just got&amp;gt;
+git add remote newbranch git@hostedgit.yourdomain.com:name/project.git
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>PHP: Curl vs file_get_contents benchmark</title>
+      <link>http://localhost:1313/posts/php-curl-vs-file_get_contents-benchmark/</link>
+      <pubDate>Mon, 13 Aug 2018 17:55:17 +0000</pubDate>
+      <guid>http://localhost:1313/posts/php-curl-vs-file_get_contents-benchmark/</guid>
+      <description>&lt;p&gt;I benchmarked curl vs file_get_contents in &lt;strong&gt;getting headers only&lt;/strong&gt; and returning the HTTP Status Code. Here are the results:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;kevinkivi@server:~/my/secret/directory$ php curlvsfgctest.php
+Testing curl speed
+
+Domain: http://google.com
+Status: 301
+Domain: http://yahoo.com
+Status: 301
+Domain: http://nytimes.com
+Status: 301
+Domain: http://theguardian.com
+Status: 301
+Domain: http://wikipedia.org
+Status: 301
+
+Curl speed was 0.35739207267761
+
+
+Testing file\_get\_contents speed
+
+Domain: http://google.com
+Status: HTTP/1.0 301 Moved Permanently
+Domain: http://yahoo.com
+Status: HTTP/1.0 301 Moved Permanently
+Domain: http://nytimes.com
+Status: HTTP/1.1 301 Moved Permanently
+Domain: http://theguardian.com
+Status: HTTP/1.1 301
+Domain: http://wikipedia.org
+Status: HTTP/1.1 301 TLS Redirect
+
+file\_get\_contents was 1.7153549194336
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Below is the source code:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Javascript: Cronometer ratio changer</title>
+      <link>http://localhost:1313/posts/cronometer-ratio-changer/</link>
+      <pubDate>Sat, 21 Jul 2018 09:51:40 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cronometer-ratio-changer/</guid>
+      <description>&lt;p&gt;I created a script (with the help of my wife) which can change the ratio of foods. E.g.To make new food in Cronometer such as date paste, export &amp;ldquo;Dates&amp;rdquo; JSON from Cronometer. Then import the file. If the date paste is 15% water and 85% dates, then make the multiplier 0.85 and name it as you want. View at JSFiddle: &lt;a href=&#34;https://jsfiddle.net/nake89/2k78jxpt/&#34;&gt;https://jsfiddle.net/nake89/2k78jxpt/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>cPanel: Listing all domains</title>
+      <link>http://localhost:1313/posts/cpanel-listing-all-domains/</link>
+      <pubDate>Sun, 11 Feb 2018 19:46:38 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cpanel-listing-all-domains/</guid>
+      <description>&lt;p&gt;I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Usage: lsdom [OPTION] [INPUT]
+Example: lsdom [cPanel username]
+Lists domains for certain user by username or domain or for all users
+
+Options:
+  -d [domain]      Displays all domains of the user of the input domain.
+  -a, --all        Lists all domains.
+  -v, --version    Displays version.
+  -h, --help       This help page.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nake89/lsdom&#34;&gt;https://github.com/nake89/lsdom&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ubuntu: Loading Photos from Nikon D3300 DSLR Camera</title>
+      <link>http://localhost:1313/posts/ubuntu-loading-photos-from-nikon-d3300-dslr-camera/</link>
+      <pubDate>Sat, 10 Feb 2018 13:56:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ubuntu-loading-photos-from-nikon-d3300-dslr-camera/</guid>
+      <description>&lt;p&gt;I had some trouble loading photos from my Nikon D3300 camera. I had the USB cable, which came with and connected my PC to it. The camera was on. I use Xubuntu. My file manager is Thunar. The camera would appear in the file manager. Whenever I would try to browse the files in the camera, Thunar would freeze. gvfsd-ghoto2 would use up a huge chunk of the CPU. I would then have to close Thunar and try again. This happened everytime. If you are experiencing the same problems. Mys suggestion is to not use Thunar, but to download gtkam. It&amp;rsquo;s a GUI for gphoto2. You can of course simply use the gphoto2 CLI if you want. &lt;img loading=&#34;lazy&#34; src=&#34;http://kevinkivi.com/wp-content/uploads/2018/02/1166290918_b739baedbd_o-300x182.png&#34;&gt; Photo by Javler Martínez How to install gtkam:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>cPanel: Listing all non-self-signed certificates</title>
+      <link>http://localhost:1313/posts/cpanel-listing-all-non-self-signed-certificates/</link>
+      <pubDate>Sat, 10 Feb 2018 13:39:23 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cpanel-listing-all-non-self-signed-certificates/</guid>
+      <description>&lt;p&gt;I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Usage: lrcert [OPTION] [INPUT]
+Example: lrcert [cPanel username]
+
+Options:
+  -d [domain]      Displays all certificates of the owner of the domain.
+  -a, --all        Lists all certificates of all cPanel users
+  -v, --version    Displays version.
+  -h, --help       This help page.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nake89/lrcert/&#34;&gt;https://github.com/nake89/lrcert/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Echoing multiline in linux terminal</title>
+      <link>http://localhost:1313/posts/echoing-multiline-in-linux-terminal/</link>
+      <pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/echoing-multiline-in-linux-terminal/</guid>
+      <description>&lt;p&gt;There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;user@server:~/projects/blog\_content$ echo &amp;#34;This file is&amp;#34; &amp;gt;&amp;gt; multiline.txt
+user@server:~/projects/blog\_content$ echo &amp;#34;multiline&amp;#34; &amp;gt;&amp;gt; multiline.txt
+user@server:~/projects/blog\_content$ cat multiline.txt
+This file is
+multiline
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2. &lt;a href=&#34;https://en.wikipedia.org/wiki/Here_document#Unix_shells&#34;&gt;Heredoc&lt;/a&gt; -method You can replace EOF with your choice of characters. It denotes the ending of your input.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PHP: Namecheap.com API Class</title>
+      <link>http://localhost:1313/posts/php-namecheap-com-api-class/</link>
+      <pubDate>Tue, 16 May 2017 18:19:52 +0000</pubDate>
+      <guid>http://localhost:1313/posts/php-namecheap-com-api-class/</guid>
+      <description>&lt;p&gt;I built a simple to use class in PHP for the namecheap.com API. It supports all of Namecheap&amp;rsquo;s API methods. I released the code on GitHub. Example of usage:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;require&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;namecheap.class.php&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$username &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;YOUR USERNAME&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$apiKey &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;YOUR API KEY&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$clientIp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;IP WHERE THIS YOUR SCRIPT IS HOSTED&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$namecheap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Namecheap&lt;/span&gt; ($username, $apiKey, $clientIp) ;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$data\[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Command&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;\&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;namecheap.ssl.getList&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$returned &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $namecheap&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;request&lt;/span&gt;($data);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;\_r&lt;/span&gt;($returned)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;GitHub release:&lt;a href=&#34;https://github.com/nake89/namecheap&#34;&gt; https://github.com/nake89/namecheap&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>End Bash Script Loop</title>
+      <link>http://localhost:1313/posts/end-bash-script-loop/</link>
+      <pubDate>Wed, 03 May 2017 16:24:51 +0000</pubDate>
+      <guid>http://localhost:1313/posts/end-bash-script-loop/</guid>
+      <description>&lt;p&gt;Sometimes when bash scripting you might want the ability to cancel your script&amp;rsquo;s loop with CTRL-C. Below is an exampl simple script which loops through a file of domains separated by line break and it digs the A record (IP address) of the domain. Read further to learn how to force quit this script.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#!/bin/bash
+while read p; do
+    dig $p A +short
+done &amp;lt;listofdomains.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If your list of domains is large your and you want to quit this script, you cant. Pressing CTRL-C will not work. You need to add &lt;code&gt;trap &amp;quot;echo Script ended; exit;&amp;quot; SIGINT SIGTERM&lt;/code&gt; to the beginning of your script. E.g.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reverse of hostname&#39;s IP</title>
+      <link>http://localhost:1313/posts/reverse-hostname-ip/</link>
+      <pubDate>Sun, 23 Apr 2017 13:06:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/reverse-hostname-ip/</guid>
+      <description>&lt;p&gt;Are you tired of typing &lt;code&gt;host domain.tld&lt;/code&gt; and then typing &lt;code&gt;host 123.123.123.123&lt;/code&gt; just to be able to get the reverse of the ip of the hostname you&amp;rsquo;re interested in. I know I am. Here is my node.js commandline application as a solution for that problem. This software requires node.js to run, which you can download here: &lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;https://nodejs.org/en/download/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installation&lt;/strong&gt; &lt;code&gt;npm i fore-cli -g&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage&lt;/strong&gt; &lt;code&gt;fore domain.tld&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# fore kevinkivi.com
+hel1-77-86-179-68.ext.nebulacloud.fi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;GitHub repository: &lt;a href=&#34;https://github.com/nake89/fore&#34;&gt;https://github.com/nake89/fore&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fix Certificate error with wget</title>
+      <link>http://localhost:1313/posts/certificate-error-with-wget/</link>
+      <pubDate>Sat, 22 Apr 2017 21:55:18 +0000</pubDate>
+      <guid>http://localhost:1313/posts/certificate-error-with-wget/</guid>
+      <description>&lt;p&gt;So, you are unable to download from https sources with wget. Instead you get the following error.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ERROR: The certificate of \`www.google.com&amp;#39; is not trusted.
+ERROR: The certificate of \`www.google.com&amp;#39; hasn&amp;#39;t got a known issuer.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;No problemo. This error is most likely occurring for missing root certificates. Simply install the ca-certificates package:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install ca-certificates
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This should work on Ubuntu and Debian derivatives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Search Contents of File in Linux</title>
+      <link>http://localhost:1313/posts/search-contents-file-linux/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/search-contents-file-linux/</guid>
+      <description>&lt;p&gt;This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to pass command-line arguments in node.js</title>
+      <link>http://localhost:1313/posts/pass-command-line-arguments-node-js/</link>
+      <pubDate>Sat, 15 Apr 2017 16:43:25 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pass-command-line-arguments-node-js/</guid>
+      <description>&lt;p&gt;So you want to pass information to your program. This can be quite easily achieved. The arguments are contained in &lt;code&gt;process.argv&lt;/code&gt;. arg.js&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;argv&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;argv&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;argv&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;argv&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;argv&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Testing the code:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nake89@debian:~/nodeprojects/soacomp$ node arg.js what is this
+/home/nake89/.nvm/versions/node/v6.10.2/bin/node
+/home/nake89/nodeprojects/soacomp/arg.js
+what
+is
+this
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;So the first line is the location of your node executable and the second one is the location of the script. These are largely unnecessary which is why the following script is so popular. It strips away the first to results of the array.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installing Vim UltiSnips on Debian 7 Wheezy</title>
+      <link>http://localhost:1313/posts/ultisnips-debian-wheezy/</link>
+      <pubDate>Sat, 15 Apr 2017 11:10:42 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ultisnips-debian-wheezy/</guid>
+      <description>&lt;p&gt;I had some problems recently installing UltiSnips on my Debian Wheezy. The first problem is that the Vim which comes with Debian does not come precompiled with Python, which UltiSnips needs. The second problem is that the version of the Vim is too old and is unsupported by UltiSnips. First &lt;a href=&#34;https://www.howtogeek.com/118389/how-to-comment-out-and-uncomment-lines-in-a-configuration-file/&#34;&gt;uncomment&lt;/a&gt; or add the following line to your &lt;code&gt;/etc/apt/sources.list&lt;/code&gt;. This is because the version of Vim in the default repository is too old. You can read more about backports &lt;a href=&#34;https://backports.debian.org/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Joker.com automation</title>
+      <link>http://localhost:1313/posts/joker-com-automation/</link>
+      <pubDate>Sun, 09 Oct 2016 11:47:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/joker-com-automation/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been working on automation for joker.com, so that I can unlock domains and order the auth-id (epp-key, transfer key) faster. It uses the joker.com API. I wrote it in node.js. It is still in development and I will add more functionality to this application. Here is the npm page: &lt;a href=&#34;https://www.npmjs.com/package/joker-auto&#34;&gt;https://www.npmjs.com/package/joker-auto&lt;/a&gt; Github: &lt;a href=&#34;https://github.com/nake89/joker-nodejs&#34;&gt;https://github.com/nake89/joker-nodejs&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;joker-automation&#34;&gt;Joker Automation&lt;/h3&gt;
+&lt;p&gt;This is a node.js script for automating Joker.com services. Still in early development. Currently only logs you in and unlocks a domain and gives you the auth-id (transfer key) of a domain.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

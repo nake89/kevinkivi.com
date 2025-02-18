@@ -1,11 +1,115 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Linux on kevinkivi.com</title><link>https://kevinkivi.com/tags/linux/</link><description>Recent content in Linux on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Sun, 25 Jul 2021 10:11:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Say goodbye to grep</title><link>https://kevinkivi.com/posts/the-silver-searcher/</link><pubDate>Sun, 25 Jul 2021 10:11:00 +0200</pubDate><guid>https://kevinkivi.com/posts/the-silver-searcher/</guid><description>ack is a famous code search tool to replace grep (in a lot of use cases): https://beyondgrep.com/why-ack/
-Now there is something even better. There is ag aka The Silver Searcher: ggreer/the_silver_searcher It is like ack, but faster.
-Why not just grep? Hella fast. Like really really fast. It is beautifully optimized C. It ignores files from .gitignore Instead of doing this with grep:
-grep -R --exclude-dir=node_modules &amp;#39;foobar&amp;#39; /path/to/your/code You can just do (if you have node_modules in your .</description></item><item><title>Autostart any GUI app in Manjaro</title><link>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</link><pubDate>Fri, 30 Apr 2021 19:33:00 +0200</pubDate><guid>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</guid><description>In this example I will autostart the GUI package manager of Manjaro.
-Create a file e.g. ~/.config/autostart/pamac-manager.desktop In that file put:
-[Desktop Entry] Terminal=false Name=pamac-manager Type=Application Exec=/usr/bin/pamac-manager Icon=pamac-manager Comment=Package Manager In the Exec line put the path to your executable file. The rest you can probably guess.
-Source: https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html</description></item><item><title>Linux &amp; OSX: Get file encoding</title><link>https://kevinkivi.com/posts/linux-osx-get-file-encoding/</link><pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate><guid>https://kevinkivi.com/posts/linux-osx-get-file-encoding/</guid><description>Sometime you need to know what&amp;rsquo;s your file encoding? Is it UTF-8, ISO 8859-1, ASCII or Windows 1252? You can find this out by using the file Unix command. Linux: file -i &amp;lt;filename&amp;gt; Mac OSX: file -I &amp;lt;filename&amp;gt; Example usage:
-username@server ~$ file -i somefile.php somefile.php: text/x-php; charset=us-ascii username@server ~$ file -i myutf8file.txt myutf8file.txt: text/plain; charset=utf-8 username@server ~$ file -i username.tar.bz2 username.tar.bz2: application/x-bzip2; charset=binary username@server ~$ If you want only the encoding.</description></item><item><title>cPanel: Listing all domains</title><link>https://kevinkivi.com/posts/cpanel-listing-all-domains/</link><pubDate>Sun, 11 Feb 2018 19:46:38 +0000</pubDate><guid>https://kevinkivi.com/posts/cpanel-listing-all-domains/</guid><description>I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.
-Usage: lsdom [OPTION] [INPUT] Example: lsdom [cPanel username] Lists domains for certain user by username or domain or for all users Options: -d [domain] Displays all domains of the user of the input domain. -a, --all Lists all domains. -v, --version Displays version. -h, --help This help page.</description></item><item><title>cPanel: Listing all non-self-signed certificates</title><link>https://kevinkivi.com/posts/cpanel-listing-all-non-self-signed-certificates/</link><pubDate>Sat, 10 Feb 2018 13:39:23 +0000</pubDate><guid>https://kevinkivi.com/posts/cpanel-listing-all-non-self-signed-certificates/</guid><description>I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.
-Usage: lrcert [OPTION] [INPUT] Example: lrcert [cPanel username] Options: -d [domain] Displays all certificates of the owner of the domain. -a, --all Lists all certificates of all cPanel users -v, --version Displays version. -h, --help This help page. GitHub: https://github.com/nake89/lrcert/</description></item><item><title>Echoing multiline in linux terminal</title><link>https://kevinkivi.com/posts/echoing-multiline-in-linux-terminal/</link><pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate><guid>https://kevinkivi.com/posts/echoing-multiline-in-linux-terminal/</guid><description>There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.
-user@server:~/projects/blog\_content$ echo &amp;#34;This file is&amp;#34; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ echo &amp;#34;multiline&amp;#34; &amp;gt;&amp;gt; multiline.txt user@server:~/projects/blog\_content$ cat multiline.txt This file is multiline 2.</description></item><item><title>How to Search Contents of File in Linux</title><link>https://kevinkivi.com/posts/search-contents-file-linux/</link><pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate><guid>https://kevinkivi.com/posts/search-contents-file-linux/</guid><description>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on kevinkivi.com</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Jul 2021 10:11:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Say goodbye to grep</title>
+      <link>http://localhost:1313/posts/the-silver-searcher/</link>
+      <pubDate>Sun, 25 Jul 2021 10:11:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/the-silver-searcher/</guid>
+      <description>&lt;p&gt;&lt;code&gt;ack&lt;/code&gt; is a famous code search tool to replace &lt;code&gt;grep&lt;/code&gt; (in a lot of use cases): &lt;a href=&#34;https://beyondgrep.com/why-ack/&#34;&gt;https://beyondgrep.com/why-ack/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now there is something even better. There is &lt;code&gt;ag&lt;/code&gt; aka The Silver Searcher: &lt;a href=&#34;https://github.com/ggreer/the_silver_searcher&#34;&gt;ggreer/the_silver_searcher&lt;/a&gt;
+It is like ack, but faster.&lt;/p&gt;
+&lt;h3 id=&#34;why-not-just-grep&#34;&gt;Why not just grep?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ggreer/the_silver_searcher#whats-so-great-about-ag&#34;&gt;Hella fast.&lt;/a&gt; &lt;a href=&#34;https://geoff.greer.fm/ag/speed/&#34;&gt;Like really&lt;/a&gt; &lt;a href=&#34;https://github.com/ggreer/the_silver_searcher#how-is-it-so-fast&#34;&gt;really fast.&lt;/a&gt; It is beautifully optimized C.&lt;/li&gt;
+&lt;li&gt;It ignores files from &lt;code&gt;.gitignore&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead of doing this with grep:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grep -R --exclude-dir=node_modules &amp;#39;foobar&amp;#39; /path/to/your/code
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can just do (if you have node_modules in your .gitignore):&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Autostart any GUI app in Manjaro</title>
+      <link>http://localhost:1313/posts/auto-start-gui-app-in-manjaro/</link>
+      <pubDate>Fri, 30 Apr 2021 19:33:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/auto-start-gui-app-in-manjaro/</guid>
+      <description>&lt;p&gt;In this example I will autostart the GUI package manager of Manjaro.&lt;/p&gt;
+&lt;p&gt;Create a file e.g. &lt;code&gt;~/.config/autostart/pamac-manager.desktop&lt;/code&gt;
+In that file put:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Desktop Entry]
+Terminal=false
+Name=pamac-manager
+Type=Application
+Exec=/usr/bin/pamac-manager
+Icon=pamac-manager
+Comment=Package Manager
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the &lt;code&gt;Exec&lt;/code&gt; line put the path to your executable file. The rest you can probably guess.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html&#34;&gt;https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux &amp; OSX: Get file encoding</title>
+      <link>http://localhost:1313/posts/linux-osx-get-file-encoding/</link>
+      <pubDate>Fri, 28 Sep 2018 14:37:01 +0000</pubDate>
+      <guid>http://localhost:1313/posts/linux-osx-get-file-encoding/</guid>
+      <description>&lt;p&gt;Sometime you need to know what&amp;rsquo;s your file encoding? Is it UTF-8, ISO 8859-1, ASCII or Windows 1252? You can find this out by using the &lt;code&gt;file&lt;/code&gt; Unix command. Linux: &lt;code&gt;file -i &amp;lt;filename&amp;gt;&lt;/code&gt; Mac OSX: &lt;code&gt;file -I &amp;lt;filename&amp;gt;&lt;/code&gt; Example usage:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;username@server ~$ file -i somefile.php
+somefile.php: text/x-php; charset=us-ascii
+username@server ~$ file -i myutf8file.txt
+myutf8file.txt: text/plain; charset=utf-8
+username@server ~$ file -i username.tar.bz2
+username.tar.bz2: application/x-bzip2; charset=binary
+username@server ~$
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you want only the encoding. You can do &lt;code&gt;file -i filename.txt | sed &amp;quot;s/.*charset=\(.*\)/\1/&amp;quot;&lt;/code&gt; E.g.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>cPanel: Listing all domains</title>
+      <link>http://localhost:1313/posts/cpanel-listing-all-domains/</link>
+      <pubDate>Sun, 11 Feb 2018 19:46:38 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cpanel-listing-all-domains/</guid>
+      <description>&lt;p&gt;I made a bash script listing all main domains and addon domains (for certain user by username or domain or for all users) in cPanel.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Usage: lsdom [OPTION] [INPUT]
+Example: lsdom [cPanel username]
+Lists domains for certain user by username or domain or for all users
+
+Options:
+  -d [domain]      Displays all domains of the user of the input domain.
+  -a, --all        Lists all domains.
+  -v, --version    Displays version.
+  -h, --help       This help page.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nake89/lsdom&#34;&gt;https://github.com/nake89/lsdom&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>cPanel: Listing all non-self-signed certificates</title>
+      <link>http://localhost:1313/posts/cpanel-listing-all-non-self-signed-certificates/</link>
+      <pubDate>Sat, 10 Feb 2018 13:39:23 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cpanel-listing-all-non-self-signed-certificates/</guid>
+      <description>&lt;p&gt;I made a bash script listing all non-self-signed certificates (for certain user by username or domain or for all users) in cPanel.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Usage: lrcert [OPTION] [INPUT]
+Example: lrcert [cPanel username]
+
+Options:
+  -d [domain]      Displays all certificates of the owner of the domain.
+  -a, --all        Lists all certificates of all cPanel users
+  -v, --version    Displays version.
+  -h, --help       This help page.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nake89/lrcert/&#34;&gt;https://github.com/nake89/lrcert/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Echoing multiline in linux terminal</title>
+      <link>http://localhost:1313/posts/echoing-multiline-in-linux-terminal/</link>
+      <pubDate>Sat, 03 Feb 2018 18:02:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/echoing-multiline-in-linux-terminal/</guid>
+      <description>&lt;p&gt;There are at least three fun ways to echo multiline to a file. We are going to look at doing the output twice, the heredoc -method and writing multiline using double quotes. 1. Output twice I think this is the simplest and most intuitive method if you are familiar with linux output redirection.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;user@server:~/projects/blog\_content$ echo &amp;#34;This file is&amp;#34; &amp;gt;&amp;gt; multiline.txt
+user@server:~/projects/blog\_content$ echo &amp;#34;multiline&amp;#34; &amp;gt;&amp;gt; multiline.txt
+user@server:~/projects/blog\_content$ cat multiline.txt
+This file is
+multiline
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2. &lt;a href=&#34;https://en.wikipedia.org/wiki/Here_document#Unix_shells&#34;&gt;Heredoc&lt;/a&gt; -method You can replace EOF with your choice of characters. It denotes the ending of your input.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Search Contents of File in Linux</title>
+      <link>http://localhost:1313/posts/search-contents-file-linux/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/search-contents-file-linux/</guid>
+      <description>&lt;p&gt;This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

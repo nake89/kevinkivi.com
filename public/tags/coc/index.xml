@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Coc on kevinkivi.com</title><link>https://kevinkivi.com/tags/coc/</link><description>Recent content in Coc on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Tue, 25 Oct 2022 22:01:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/coc/index.xml" rel="self" type="application/rss+xml"/><item><title>VIM and PHP</title><link>https://kevinkivi.com/posts/vim-php/</link><pubDate>Tue, 25 Oct 2022 22:01:00 +0200</pubDate><guid>https://kevinkivi.com/posts/vim-php/</guid><description>To make VIM work more like VSCode, you really want to install VIM plugin called CoC. It adds LSP features to VIM and makes it easy to port VSCode extensions to Vim, and it has great, mature ecosystem: https://github.com/neoclide/coc.nvim
-To get PHP language server features, you want to install a PHP language server extension for CoC: https://github.com/marlonfan/coc-phpls
-This extension uses Intelephense in the background and makes it so that you can jump to definitions etc.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Coc on kevinkivi.com</title>
+    <link>http://localhost:1313/tags/coc/</link>
+    <description>Recent content in Coc on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Oct 2022 22:01:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/coc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VIM and PHP</title>
+      <link>http://localhost:1313/posts/vim-php/</link>
+      <pubDate>Tue, 25 Oct 2022 22:01:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/vim-php/</guid>
+      <description>&lt;p&gt;To make VIM work more like VSCode, you really want to install VIM plugin called CoC. It adds LSP features to VIM and makes it easy to port VSCode extensions to Vim, and it has great, mature ecosystem: &lt;a href=&#34;https://github.com/neoclide/coc.nvim&#34;&gt;https://github.com/neoclide/coc.nvim&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To get PHP language server features, you want to install a PHP language server extension for CoC: &lt;a href=&#34;https://github.com/marlonfan/coc-phpls&#34;&gt;https://github.com/marlonfan/coc-phpls&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This extension uses Intelephense in the background and makes it so that you can jump to definitions etc. But some of the features that you are used to have with language servers are missing unless you get premium licence for Intelephense. Like renaming variables.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

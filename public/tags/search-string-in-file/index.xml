@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Search String in File on kevinkivi.com</title><link>https://kevinkivi.com/tags/search-string-in-file/</link><description>Recent content in Search String in File on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Sat, 15 Apr 2017 17:48:48 +0000</lastBuildDate><atom:link href="https://kevinkivi.com/tags/search-string-in-file/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Search Contents of File in Linux</title><link>https://kevinkivi.com/posts/search-contents-file-linux/</link><pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate><guid>https://kevinkivi.com/posts/search-contents-file-linux/</guid><description>This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Search String in File on kevinkivi.com</title>
+    <link>http://localhost:1313/tags/search-string-in-file/</link>
+    <description>Recent content in Search String in File on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Apr 2017 17:48:48 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/search-string-in-file/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Search Contents of File in Linux</title>
+      <link>http://localhost:1313/posts/search-contents-file-linux/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/search-contents-file-linux/</guid>
+      <description>&lt;p&gt;This is something you need to do often for one reason or another. Maybe you have a bunch of text files, which have been named horribly and you have no idea which file has the thing you are looking for, but you happen to remember a word in that file. Or maybe you need to find which file contains a certain variable to find the root cause of an error you are experiencing in your script.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

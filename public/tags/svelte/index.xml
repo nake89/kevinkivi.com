@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Svelte on kevinkivi.com</title><link>https://kevinkivi.com/tags/svelte/</link><description>Recent content in Svelte on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Tue, 16 Nov 2021 18:06:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/svelte/index.xml" rel="self" type="application/rss+xml"/><item><title>WPAIO.one - What Page Am I On?</title><link>https://kevinkivi.com/posts/wpaio/</link><pubDate>Tue, 16 Nov 2021 18:06:00 +0200</pubDate><guid>https://kevinkivi.com/posts/wpaio/</guid><description>I wanted to see if I could create and publish an app (website) in one day. This app had to have some practical value. An app to keep track of the current book I am reading (Tom Clancy&amp;rsquo;s Oath of Office). I do use a bookmark, but it is very thin and I wanted an app where I can enter the page I&amp;rsquo;m currently on. So I created https://wpaio.one</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Svelte on kevinkivi.com</title>
+    <link>http://localhost:1313/tags/svelte/</link>
+    <description>Recent content in Svelte on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Nov 2021 18:06:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/svelte/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WPAIO.one - What Page Am I On?</title>
+      <link>http://localhost:1313/posts/wpaio/</link>
+      <pubDate>Tue, 16 Nov 2021 18:06:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/wpaio/</guid>
+      <description>&lt;p&gt;I wanted to see if I could create and publish an app (website) in one day. This app had to have some practical value. An app to keep track of the current book I am reading (Tom Clancy&amp;rsquo;s Oath of Office). I do use a bookmark, but it is very thin and I wanted an app where I can enter the page I&amp;rsquo;m currently on. So I created &lt;a href=&#34;https://wpaio.one&#34;&gt;https://wpaio.one&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

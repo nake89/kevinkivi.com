@@ -1,2 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Typescript on kevinkivi.com</title><link>https://kevinkivi.com/tags/typescript/</link><description>Recent content in Typescript on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Wed, 13 Nov 2024 20:22:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/typescript/index.xml" rel="self" type="application/rss+xml"/><item><title>Thoughts on Deno</title><link>https://kevinkivi.com/posts/deno/</link><pubDate>Wed, 13 Nov 2024 20:22:00 +0200</pubDate><guid>https://kevinkivi.com/posts/deno/</guid><description>I originally asked chatGPT to write this article. Just to test chatGPT out. I forgot to mention that I wrote it with chatGPT and it was absolutely an embarrasing piece of writing. It looked like a machine wrote it.
-The topic of article is still very interesting. Now maybe more than ever. Because Deno 2.0 has been released. JSR exists. After about two years (?) of using Deno what can I say about it that hasn&amp;rsquo;t been said.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Typescript on kevinkivi.com</title>
+    <link>http://localhost:1313/tags/typescript/</link>
+    <description>Recent content in Typescript on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 13 Nov 2024 20:22:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts on Deno</title>
+      <link>http://localhost:1313/posts/deno/</link>
+      <pubDate>Wed, 13 Nov 2024 20:22:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/deno/</guid>
+      <description>&lt;p&gt;I originally asked chatGPT to write this article. Just to test chatGPT out.
+I forgot to mention that I wrote it with chatGPT and it was absolutely an
+embarrasing piece of writing. It looked like a machine wrote it.&lt;/p&gt;
+&lt;p&gt;The topic of article is still very interesting. Now maybe more than ever.
+Because Deno 2.0 has been released. JSR exists. After about two years (?)
+of using Deno what can I say about it that hasn&amp;rsquo;t been said. Nothing.
+But I want to give my input.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

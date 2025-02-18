@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Dynamodb on kevinkivi.com</title><link>https://kevinkivi.com/tags/dynamodb/</link><description>Recent content in Dynamodb on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Thu, 05 Aug 2021 19:11:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/dynamodb/index.xml" rel="self" type="application/rss+xml"/><item><title>Add GSI to existing DynamodDB table (nodejs, aws-sdk)</title><link>https://kevinkivi.com/posts/add-gsi-to-existing-table/</link><pubDate>Thu, 05 Aug 2021 19:11:00 +0200</pubDate><guid>https://kevinkivi.com/posts/add-gsi-to-existing-table/</guid><description>If you are using the Serverless Framework, you can create DynamodDB and add one GSI (Global Secondary Index) with cloudformation syntax.
-How to add table: https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration
-Here is the syntax to add GSI: https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/
-Official docs related to GSI cloudformation syntax: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html
-That&amp;rsquo;s all fine until you need to add another GSI. You can&amp;rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: https://aws.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dynamodb on kevinkivi.com</title>
+    <link>http://localhost:1313/tags/dynamodb/</link>
+    <description>Recent content in Dynamodb on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Aug 2021 19:11:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dynamodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add GSI to existing DynamodDB table (nodejs, aws-sdk)</title>
+      <link>http://localhost:1313/posts/add-gsi-to-existing-table/</link>
+      <pubDate>Thu, 05 Aug 2021 19:11:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/add-gsi-to-existing-table/</guid>
+      <description>&lt;p&gt;If you are using the Serverless Framework, you can create DynamodDB and add &lt;strong&gt;one&lt;/strong&gt; GSI (Global Secondary Index) with cloudformation syntax.&lt;/p&gt;
+&lt;p&gt;How to add table: &lt;a href=&#34;https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration&#34;&gt;https://www.serverless.com/framework/docs/providers/aws/guide/resources/#configuration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is the syntax to add GSI: &lt;a href=&#34;https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/&#34;&gt;https://cloudkatha.com/solved-cannot-perform-more-than-one-gsi-creation-or-deletion-in-a-single-update/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Official docs related to GSI cloudformation syntax: &lt;a href=&#34;https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html&#34;&gt;https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s all fine until you need to add another GSI. You can&amp;rsquo;t do that with Cloudformation syntax [1]. Luckily we can do that programatically with Node.js (you could also use another programming language and just use the related aws-sdk library: &lt;a href=&#34;https://aws.amazon.com/tools/&#34;&gt;https://aws.amazon.com/tools/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

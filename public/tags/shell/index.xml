@@ -1,3 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Shell on kevinkivi.com</title><link>https://kevinkivi.com/tags/shell/</link><description>Recent content in Shell on kevinkivi.com</description><generator>Hugo -- 0.123.7</generator><language>en</language><lastBuildDate>Fri, 12 Aug 2022 20:52:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/shell/index.xml" rel="self" type="application/rss+xml"/><item><title>How to get history to work in vim mode zsh</title><link>https://kevinkivi.com/posts/how-to-get-history-to-work-in-vim-mode-zsh/</link><pubDate>Fri, 12 Aug 2022 20:52:00 +0200</pubDate><guid>https://kevinkivi.com/posts/how-to-get-history-to-work-in-vim-mode-zsh/</guid><description>When enabling vim mode in zsh it will make pressing ctrl+r not show terminal history anymore. It gets rebound to terminal refresh which is not necessary. To renable ctrl+r append this to your .zshrc:
-bindkey &amp;#34;^R&amp;#34; history-incremental-search-backward Now close the terminal and reopen it (or just type . .zshrc) and you are done.</description></item><item><title>How to enable vim mode in zsh</title><link>https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/</link><pubDate>Fri, 12 Aug 2022 20:24:00 +0200</pubDate><guid>https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/</guid><description>Vim mode let&amp;rsquo;s you use vim keys. You start in insert mode and esc let&amp;rsquo;s you go into normal mode. To enable vim mode append the following snippet to your .zshrc in your home directory.
-# Enable vim mode. bindkey -v Now close the terminal and reopen it (or just type . .zshrc) and you are done.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shell on kevinkivi.com</title>
+    <link>http://localhost:1313/tags/shell/</link>
+    <description>Recent content in Shell on kevinkivi.com</description>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 12 Aug 2022 20:52:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to get history to work in vim mode zsh</title>
+      <link>http://localhost:1313/posts/how-to-get-history-to-work-in-vim-mode-zsh/</link>
+      <pubDate>Fri, 12 Aug 2022 20:52:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/how-to-get-history-to-work-in-vim-mode-zsh/</guid>
+      <description>&lt;p&gt;When &lt;a href=&#34;https://kevinkivi.com/posts/how-to-enable-vim-mode-in-zsh/&#34;&gt;enabling vim mode in zsh&lt;/a&gt; it will make pressing &lt;code&gt;ctrl+r&lt;/code&gt; not show terminal history anymore. It gets rebound to terminal refresh which is not necessary. To renable &lt;code&gt;ctrl+r&lt;/code&gt; append this to your &lt;code&gt;.zshrc&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bindkey &amp;#34;^R&amp;#34; history-incremental-search-backward
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now close the terminal and reopen it (or just type &lt;code&gt;. .zshrc&lt;/code&gt;) and you are done.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to enable vim mode in zsh</title>
+      <link>http://localhost:1313/posts/how-to-enable-vim-mode-in-zsh/</link>
+      <pubDate>Fri, 12 Aug 2022 20:24:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/how-to-enable-vim-mode-in-zsh/</guid>
+      <description>&lt;p&gt;Vim mode let&amp;rsquo;s you use vim keys. You start in insert mode and esc let&amp;rsquo;s you go into normal mode. To enable vim mode append the following snippet to your &lt;code&gt;.zshrc&lt;/code&gt; in your home directory.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Enable vim mode.
+bindkey -v
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now close the terminal and reopen it (or just type &lt;code&gt;. .zshrc&lt;/code&gt;) and you are done.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

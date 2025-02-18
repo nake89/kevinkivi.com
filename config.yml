@@ -16,6 +16,8 @@ params:
         buttons:
             - name: Posts
               url: posts
+            - name: About Me
+              url: about
             - name: Github
               url: "https://github.com/nake89"
 
