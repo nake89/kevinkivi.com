@@ -12,7 +12,7 @@ It all started out with trying to find a Damerau-Levenshtein to use in my projec
 
 ![image](1.png)
 
-Tried it from jsdelivr. No browser export. So It doesn't work with `script src`. Also it's shit:
+Tried it from jsdelivr. No browser export. So It doesn't work with `script src`. Also it's crap:
 ```typescript
 import levenshtein from 'damerau-levenshtein';
 const lev = levenshtein('CA', 'ABC');
@@ -32,7 +32,7 @@ Let's try the next one:
 
 ![image](2.png)
 
-What kind of special hell is this. No browser version and it only has the distance. It's supposed to be the second most popular. And I tested it, it also gives the wrong answer! WTF?! People don't care about anything. They just npm stuff and LGTM and these are the popular ones. Ok. What's next?
+What the H-E-double-hockeysticks is this. No browser version and it only has the distance. It's supposed to be the second most popular. And I tested it, it also gives the wrong answer! The heck?! Consumers don't care about anything. They just npm install stuff and LGTM and these are the popular ones? Ok. What's next?
 
 ![image](3.png)
 
@@ -57,18 +57,18 @@ Hmm... The javascript looks simple enough on the [non-minified version of jsdeli
     };
 ```
 
-Oh, that's simple. I can do that. Done. What should we name our function? Something short. The whole point was not to waste too much time. Let's call it `dam(str1, str2);`. What's next. What should we name the repo. `real-damerau-levenshtein` of course. Push it to npm? F that, this is for browsers. Just let jsdelivr do it's magic an minify it to the masses.
+Oh, that's simple. I can do that. Done. What should we name our function? Something short. The whole point was not to waste too much time. Let's call it `dam(str1, str2);`. What's next. What should we name the repo. `real-damerau-levenshtein` of course. Push it to npm? No way, this is for browsers. Just let jsdelivr do it's magic an minify it to the masses.
 
 So here you go:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/nake89/real-damerau-levenshtein/dist/browser.min.js"></script>
 ```
 
-You're fucking welcome! With the steps, relatives and similarities alike!
+You're mighty welcome! With the steps, relatives and similarities alike!
 
 Usage:
 ```javascript
 const result = dam("CA", "ABC");
 ```
 
-And yes, it returns the CORRECT DAMN RESULT!
+And yes, it returns the correct dang result!
