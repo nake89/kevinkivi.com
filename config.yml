@@ -9,7 +9,6 @@ params:
     ShowPostNavLinks: true
     ShowCodeCopyButtons: true
 
-
     profileMode:
         enabled: true
         title: "Kevin Kivi 🧙🏽‍♂️" # optional default will be site title
