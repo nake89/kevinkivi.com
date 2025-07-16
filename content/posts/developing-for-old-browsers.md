@@ -1,6 +1,7 @@
 ---
 title: "Developing for Old Browsers"
-date: 2025-07-16T10:44:00+02:00
+date: 2025-07-16T09:44:00+02:00
+lastmod: 2025-07-16T14:35:00+02:00
 draft: false
 tags:
   ["internet explorer", "javascript", "ie6", "software development"]
