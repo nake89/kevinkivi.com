@@ -23,4 +23,4 @@ Internet Explorer <=6 had interesting quirks.[^doublemargin]
 [^vimairline]: https://github.com/vim-airline/vim-airline
 [^notepadplusplus]: Version 5.8.2 seems to be the last properly working version for Windows 98. https://www.vogons.org/viewtopic.php?t=49858&start=40
 [^webone]: https://github.com/atauenis/webone
-[^doublemargin] https://web.archive.org/web/20090501035842/http://www.positioniseverything.net/explorer/doubled-margin.html
+[^doublemargin]: https://web.archive.org/web/20090501035842/http://www.positioniseverything.net/explorer/doubled-margin.html
