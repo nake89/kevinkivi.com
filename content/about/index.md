@@ -2,7 +2,6 @@
 title: "About me"
 date: 2025-02-18T13:32:09+02:00
 lastmod: 2025-07-16T14:46:00+02:00
-lastmod: 
 draft: false
 ---
 
