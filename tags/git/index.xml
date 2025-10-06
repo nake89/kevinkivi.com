@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Git on kevinkivi.com</title><link>https://kevinkivi.com/tags/git/</link><description>Recent content in Git on kevinkivi.com</description><generator>Hugo -- 0.148.1</generator><language>en</language><lastBuildDate>Thu, 27 Sep 2018 19:37:13 +0000</lastBuildDate><atom:link href="https://kevinkivi.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>GIT: Get remote repository URL</title><link>https://kevinkivi.com/posts/git-get-remote-repository-url/</link><pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate><guid>https://kevinkivi.com/posts/git-get-remote-repository-url/</guid><description>&lt;p>So you need the remote repository URL. Maybe because you are trying to &lt;code>git add remote&lt;/code>. You can type the below text to get the full info (needs to be done inside the folder you are working in):&lt;/p>
-&lt;pre tabindex="0">&lt;code>git remote show origin
-&lt;/code>&lt;/pre>&lt;p>OR&lt;/p>
-&lt;pre tabindex="0">&lt;code>git config --get remote.origin.url
-&lt;/code>&lt;/pre>&lt;p>After you know this, if you want you can create a new remote branch&lt;/p>
-&lt;pre tabindex="0">&lt;code>git add remote &amp;lt;name you want for your new branch&amp;gt; &amp;lt;URL you just got&amp;gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Git on kevinkivi.com</title><link>https://kevinkivi.com/tags/git/</link><description>Recent content in Git on kevinkivi.com</description><generator>Hugo -- 0.151.0</generator><language>en</language><lastBuildDate>Thu, 27 Sep 2018 19:37:13 +0000</lastBuildDate><atom:link href="https://kevinkivi.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>GIT: Get remote repository URL</title><link>https://kevinkivi.com/posts/git-get-remote-repository-url/</link><pubDate>Thu, 27 Sep 2018 19:37:13 +0000</pubDate><guid>https://kevinkivi.com/posts/git-get-remote-repository-url/</guid><description>&lt;p&gt;So you need the remote repository URL. Maybe because you are trying to &lt;code&gt;git add remote&lt;/code&gt;. You can type the below text to get the full info (needs to be done inside the folder you are working in):&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;git remote show origin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;OR&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;git config --get remote.origin.url
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After you know this, if you want you can create a new remote branch&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;git add remote &amp;lt;name you want for your new branch&amp;gt; &amp;lt;URL you just got&amp;gt;
 git add remote newbranch git@hostedgit.yourdomain.com:name/project.git
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

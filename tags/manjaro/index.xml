@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Manjaro on kevinkivi.com</title><link>https://kevinkivi.com/tags/manjaro/</link><description>Recent content in Manjaro on kevinkivi.com</description><generator>Hugo -- 0.148.1</generator><language>en</language><lastBuildDate>Fri, 30 Apr 2021 19:33:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/manjaro/index.xml" rel="self" type="application/rss+xml"/><item><title>Autostart any GUI app in Manjaro</title><link>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</link><pubDate>Fri, 30 Apr 2021 19:33:00 +0200</pubDate><guid>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</guid><description>&lt;p>In this example I will autostart the GUI package manager of Manjaro.&lt;/p>
-&lt;p>Create a file e.g. &lt;code>~/.config/autostart/pamac-manager.desktop&lt;/code>
-In that file put:&lt;/p>
-&lt;pre tabindex="0">&lt;code>[Desktop Entry]
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Manjaro on kevinkivi.com</title><link>https://kevinkivi.com/tags/manjaro/</link><description>Recent content in Manjaro on kevinkivi.com</description><generator>Hugo -- 0.151.0</generator><language>en</language><lastBuildDate>Fri, 30 Apr 2021 19:33:00 +0200</lastBuildDate><atom:link href="https://kevinkivi.com/tags/manjaro/index.xml" rel="self" type="application/rss+xml"/><item><title>Autostart any GUI app in Manjaro</title><link>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</link><pubDate>Fri, 30 Apr 2021 19:33:00 +0200</pubDate><guid>https://kevinkivi.com/posts/auto-start-gui-app-in-manjaro/</guid><description>&lt;p&gt;In this example I will autostart the GUI package manager of Manjaro.&lt;/p&gt;
+&lt;p&gt;Create a file e.g. &lt;code&gt;~/.config/autostart/pamac-manager.desktop&lt;/code&gt;
+In that file put:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[Desktop Entry]
 Terminal=false
 Name=pamac-manager
 Type=Application
 Exec=/usr/bin/pamac-manager
 Icon=pamac-manager
 Comment=Package Manager
-&lt;/code>&lt;/pre>&lt;p>In the &lt;code>Exec&lt;/code> line put the path to your executable file. The rest you can probably guess.&lt;/p>
-&lt;p>Source: &lt;a href="https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html">https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the &lt;code&gt;Exec&lt;/code&gt; line put the path to your executable file. The rest you can probably guess.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href="https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html"&gt;https://specifications.freedesktop.org/autostart-spec/autostart-spec-latest.html&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
